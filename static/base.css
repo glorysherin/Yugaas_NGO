@@ -1,0 +1,149 @@
+  @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  height: 2000px;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-bars {
+  color: #007bff;
+  font-size: 30px;
+}
+
+
+.bg-footer {
+    background-color: #33383c;
+    padding: 50px 0 30px;
+}
+.footer-heading {
+    letter-spacing: 2px;
+}
+
+.footer-link a {
+    color: #acacac;
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.footer-link a:hover {
+    color: #1bbc9b;
+}
+
+.contact-info {
+    color: #acacac;
+    font-size: 14px;
+}
+
+.footer-social-icon {
+    font-size: 15px;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.facebook {
+    background-color: #4e71a8;
+    color: #ffffff;
+}
+
+.twitter {
+    background-color: #55acee;
+    color: #ffffff;
+}
+
+.google {
+    background-color: #d6492f;
+    color: #ffffff;
+}
+
+.apple {
+    background-color: #424041;
+    color: #ffffff;
+}
+
+.footer-alt {
+    color: #acacac;
+}
+
+.footer-heading {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-heading:after {
+    content: '';
+    width: 25px;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid #1bbc9b;
+}
+/* Base styles for larger screens */
+.navbar {
+    /* Example: Add padding to the navbar for better spacing */
+    padding: 10px;
+}
+body, html {
+    height: 100%;
+}
+#main {
+    min-height: calc(100% - 60px); /* Adjust this value based on your footer height */
+    margin-bottom: -60px; /* Negative margin to counteract the footer's height */
+}
+footer {
+    height: 60px; /* Set the footer height */
+}
+/* Media query for screens with max width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .navbar-toggler {
+        /* Example: Increase the padding for the navbar-toggler for touch-friendly interaction */
+        padding: 5px;
+    }
+    
+    /* Additional adjustments for smaller screens */
+}
+
+/* Media query for screens with max width of 576px (phones and smaller) */
+@media (max-width: 576px) {
+    /* Adjust styles for even smaller screens */
+    .navbar-brand {
+        /* Example: Center-align the navbar-brand text for better readability */
+        text-align: center;
+    }
+    
+    /* Additional adjustments for smallest screens */
+    .footer-link {
+        /* Example: Make footer links stack vertically on small screens */
+        display: block;
+        margin: 5px 0;
+    }
+    
+    /* Adjust body width to prevent horizontal scrolling */
+    body {
+        overflow-x: hidden;
+    }
+    body, html {
+        height: 100%;
+    }
+    #main {
+        min-height: calc(100% - 60px); /* Adjust this value based on your footer height */
+    }
+}
