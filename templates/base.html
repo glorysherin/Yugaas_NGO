@@ -12,6 +12,67 @@
   <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+  <style>
+    /* Default styles for larger screens */
+/* You can add your default styles here */
+body{
+  overflow-x: hidden;
+}
+/* Media query for small screens (up to 640px) */
+@media screen and (max-width: 640px) {
+  .ml-14 {
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+  
+  .ml-52 {
+    margin-left: 20px; /* Adjust the margin as needed */
+  }
+  
+  .px-32 {
+    padding-left: 16px; /* Adjust the padding as needed */
+    padding-right: 16px; /* Adjust the padding as needed */
+  }
+  
+  /* Add more styles for small screens here */
+}
+
+/* Media query for medium screens (641px to 1024px) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .ml-14 {
+    margin-left: 20px; /* Adjust the margin as needed */
+  }
+  
+  .ml-52 {
+    margin-left: 40px; /* Adjust the margin as needed */
+  }
+  
+  .px-32 {
+    padding-left: 24px; /* Adjust the padding as needed */
+    padding-right: 24px; /* Adjust the padding as needed */
+  }
+  
+  /* Add more styles for medium screens here */
+}
+
+/* Media query for large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+  .ml-14 {
+    margin-left: 30px; /* Adjust the margin as needed */
+  }
+  
+  .ml-52 {
+    margin-left: 60px; /* Adjust the margin as needed */
+  }
+  
+  .px-32 {
+    padding-left: 32px; /* Adjust the padding as needed */
+    padding-right: 32px; /* Adjust the padding as needed */
+  }
+  
+  /* Add more styles for large screens here */
+}
+
+  </style>
 </head>
 <body class=" bg-background font-rob">
   <div>
@@ -66,7 +127,7 @@
             <div class="container">
               {% block content %}
               <main>
-                <div class="bg-cover pt-4" style="background-image: url(./assets/children.png);">
+                <div class="bg-cover pt-4" style="background-image: url(static/assets/children.png);">
                   <!-- <img class="bg-fixed" src="./assets/children.png" alt="children"> -->
                   <h1 class="text-white pl-28 pt-28 text-7xl font-bold">
                     Helping Each Other <br>
@@ -396,8 +457,8 @@
                 </div>
               </div>
               <div class="">
-                <div class="font-bold mt-20 ml-28 h-96" style="background-image: url(./assets/BG.png);">
-                  <h2 class=" pt-32 text-5xl text-center text-white">You can contribute to provide a place <br>
+                <div class="font-bold mt-20 ml-28 h-96" style="background-image: url(static/assets/BG.png);background-repeat: no-repeat;">
+                  <h2 class=" pt-32 text-5xl text-center text-black">You can contribute to provide a place <br>
                     for children with special needs!</h2>
                     <div class="flex content-center">
                       <div class="pl-96 pt-12">
