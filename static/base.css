@@ -147,3 +147,30 @@ footer {
         min-height: calc(100% - 60px); /* Adjust this value based on your footer height */
     }
 }
+@media (max-width: 768px) {
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ml-52 {
+      margin-left: 0; /* Resetting the left margin */
+    }
+  
+    .bg-yellow-300 {
+      margin-top: 1rem; /* Adjust the margin as needed */
+    }
+  
+    .h-12 {
+      margin-top: 1rem; /* Adjust the margin as needed */
+    }
+  
+    .w-40 {
+      width: 100%; /* Button width to fit the container */
+    }
+  
+    .text-black {
+      color: black; /* Adjust the color as needed */
+    }
+  }
+  
