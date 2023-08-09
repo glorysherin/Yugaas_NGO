@@ -13,6 +13,11 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
   <style>
+    body{
+  overflow-x: hidden;
+}
+  </style>
+  <!-- <style>
     /* Default styles for larger screens */
 /* You can add your default styles here */
 body{
@@ -72,11 +77,11 @@ body{
   /* Add more styles for large screens here */
 }
 
-  </style>
+  </style> -->
 </head>
 <body class=" bg-background font-rob">
   <div>
-    <nav class=" bg-black">
+    <nav class=" bg-black" style="">
       <div class= "bg-primary flex pb-6 pt-3">
         <div class="">
           <svg class="mt-6 ml-14" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +132,7 @@ body{
             <div class="container">
               {% block content %}
               <main>
-                <div class="bg-cover pt-4" style="background-image: url(static/assets/children.png);">
+                <div  class="bg-cover pt-4" style="background-image: url(static/assets/children.png);margin-right: ;">
                   <!-- <img class="bg-fixed" src="./assets/children.png" alt="children"> -->
                   <h1 class="text-white pl-28 pt-28 text-7xl font-bold">
                     Helping Each Other <br>
@@ -268,11 +273,12 @@ body{
                     <h1 class="">Find the popular cause <br>
                       and donate them</h1>
                   </div>
-                  <div class="flex">
+                  <div class="flex" style="margin-left: 3%;">
                     <div class="pt-3">
                         <div class="shadow-lg w-96">
-                        <div class="pl-7 pt-10">
-                            <img src="static/assets/Medical.png" alt="medical">
+                        <div class="pl-7 pt-10" style="    padding-left: 2.2rem;
+                        " >
+                            <img style="background-size: cover;" src="static/assets/Medical.png" alt="medical">
                         </div>
                         <div class="pl-14 pt-4 font-bold text-yellow-300">
                             <h1>Medical</h1>
@@ -313,7 +319,7 @@ body{
                 </div>
                 <div class="pt-3">
                     <div class="shadow-lg w-96">
-                        <div class="pl-7 pt-10">
+                        <div class="pl-7 pt-10" style="padding-left: 2.2rem; ">
                             <img src="static/assets/Homeless.png" alt="Homeless">
                         </div>
                         <div class="pl-14 pt-4 font-bold text-yellow-300">
@@ -354,7 +360,7 @@ body{
                 </div>
                 <div class="pt-3">
                     <div class="shadow-lg w-96">
-                        <div class="pl-7 pt-10">
+                        <div class="pl-7 pt-10"  style="padding-left: 2.2rem; ">
                             <img src="static/assets/help for education.png" alt="medical">
                         </div>
                         <div class="pl-14 pt-4 font-bold text-yellow-300">
@@ -395,7 +401,7 @@ body{
                 </div>
                 <div class="pt-3">
                     <div class="shadow-lg w-96">
-                        <div class="pl-7 pt-10">
+                        <div class="pl-7 pt-10"  style="padding-left: 2.2rem; ">
                             <img src="static/assets/Help for food.png    " alt="Homeless">
                         </div>
                         <div class="pl-14 pt-4 font-bold text-yellow-300">
