@@ -1,4 +1,21 @@
 {
+<<<<<<< HEAD
+  "name": "intern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css",
+    "css":" npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
+=======
     "name": "intern",
     "version": "1.0.0",
     "description": "",
@@ -14,3 +31,4 @@
       "tailwindcss": "^3.3.3"
     }
   }
+>>>>>>> 51347473e90f42e16448f6b80f2871a9b83dbbb0
