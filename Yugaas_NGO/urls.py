@@ -25,5 +25,7 @@ urlpatterns = [
     path('aboutus',views.aboutus),
     path('services',views.our_services),
     path('card',views.card),
+    path('contactus',views.contactus),
+    #path('<int:id>/',views.detail)
 
 ]

@@ -11,3 +11,5 @@ def our_services(request):
     return render(request,'Our_Services.html')
 def card(request):
     return render(request,'card.html')
+def contactus(request):
+    return render(request,'contactus.html')
