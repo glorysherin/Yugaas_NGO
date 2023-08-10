@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+  @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
 * {
   font-family: "Titillium Web", sans-serif;
 }
@@ -173,4 +173,4 @@ footer {
     .text-black {
       color: black; /* Adjust the color as needed */
     }
-}
+  }
