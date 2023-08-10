@@ -9,3 +9,5 @@ def aboutus(request):
     return render(request,'aboutus.html')
 def our_services(request):
     return render(request,'Our_Services.html')
+def card(request):
+    return render(request,'card.html')

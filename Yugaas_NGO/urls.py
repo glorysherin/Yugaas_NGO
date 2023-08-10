@@ -24,5 +24,6 @@ urlpatterns = [
     path('',views.base),
     path('aboutus',views.aboutus),
     path('services',views.our_services),
+    path('card',views.card),
 
 ]
