@@ -13,3 +13,5 @@ def card(request):
     return render(request,'card.html')
 def contactus(request):
     return render(request,'contactus.html')
+def faq(request):
+    return render(request,'FAQ.html')
