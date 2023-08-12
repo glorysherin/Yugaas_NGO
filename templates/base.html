@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOME</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
@@ -20,8 +20,6 @@
       
   margin: 0;
   padding: 0;
-
-
     }
     .bg-cover {
   background-size: cover; /* or background-size: contain; */
@@ -30,6 +28,10 @@
   </style>
 </head>
 <body class=" bg-background font-rob">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <div>
     <nav class=" " style="background-color: rgba(14, 14, 14, 1);">
       <div class= "bg-primary flex pb-6 pt-3">
@@ -47,7 +49,7 @@
 
                 </button>
                 <ul class="flex mr-auto hidden lg:flex justify-center mt-5 ml-48 px-32 text-white">
-                    <li class="pr-5"> <a class="px-3" href="">
+                    <li class="pr-5"> <a class="px-3" href="base">
                     Home
                         </a></li>
                     <li class="pr-5"><a class="px-3"  class=""href="aboutus">
@@ -59,7 +61,7 @@
                     <li class="pr-5"> <a class="px-3" href="">
                             Causes
                         </a></li>
-                    <li class="pr-5"> <a class="px-3" href="">
+                    <li class="pr-5"> <a class="px-3" href="faq">
                             FAQ's
                         </a></li>
                     <li class="pr-5"><a class="px-3" href="contactus">
@@ -75,7 +77,7 @@
       <div class="lg:hidden" >
         <div>
       <ul class="flex mr-7  justify-center mt-5 ml-48 px-32 text-white">
-        <li class="pr-5"> <a class="px-3" href="">
+        <li class="pr-5"> <a class="px-3" href="base">
         Home
             </a></li>
         <li class="pr-5"><a class="px-3"  class=""href="aboutus">
@@ -98,9 +100,7 @@
   </div>
 </div>
     </nav>
-
   </div>
-  
             <div>
               {% block content %}
               <main>
@@ -125,7 +125,7 @@
                   <div class="pl-28 pt-7 font-Roboto">
                     <h1 class="text-black">our Supporters</h1>
                   </div>
-                  <div class="flex text-3xl text-gray-500">
+                  <div class="flex text-3xl text-gray-500" data-aos="fade-up" data-aos-duration="500">
                     <div class="pl-28 pt-8">
                       <h4>logoipsm</h4>
                     </div>
@@ -152,16 +152,16 @@
                   <div class="flex">
                     <div>
             
-                      <div class="pl-60 pt-14 text-sm font-bold">
+                      <div class="pl-60 pt-14 text-sm font-bold" data-aos="fade-right">
                         <h2>OUR MISSION</h2>
                       </div>
-                      <div class="pl-60 pt-4 font-bold text-2xl">
+                      <div class="pl-60 pt-4 font-bold text-2xl" data-aos="fade-right">
                         <h1>Empowering Lives Through <br>
                           Compassionate Outreach: Providing <br>
                           Essential Support to the Marginalized
                         </h1>
                       </div>
-                      <p class="pl-60 pt-5">
+                      <p class="pl-60 pt-5" data-aos="fade-up">
                         We offer free/affordable food, education, and medical care to the <br>
                          marginalized. Education empowers children and elders for a brighter <br>
                           future. Medical support without financial barriers for better health. <br>
@@ -172,16 +172,16 @@
                       </p>
                     </div>
                     <div>
-                      <div class="pl-40 pt-14 text-sm font-bold">
+                      <div class="pl-40 pt-14 text-sm font-bold" data-aos="fade-left">
                         <h2>OUR VISION</h2>
                       </div>
-                      <div class="pl-40 pt-4 font-bold text-2xl">
+                      <div class="pl-40 pt-4 font-bold text-2xl" data-aos="fade-left">
                         <h1>Building a Compassionate and <br>
                            Inclusive Society: Our Vision for a <br>
                             Better Tomorrow <br>
                         </h1>
                       </div>
-                      <p class="pl-40 pt-5">
+                      <p class="pl-40 pt-5" data-aos="fade-up">
                         Our organization is guided by core values of compassion, equality, <br>
                          respect, inclusivity, and accountability. We treat everyone with <br>
                           empathy, ensure fairness and access to opportunities, honor dignity, <br>
@@ -192,41 +192,41 @@
                       </p>
                     </div>
                   </div>
-                  <div class="pl-20 pt-40 space-x-3 font-semibold flex">
+                  <div class="pl-20 pt-40 space-x-3 font-semibold flex" data-aos="fade-right">
                     <h1>WHAT WE DO</h1>
                     <h1>_______________</h1>
                   </div>
                   <span class="inline-flex pr-10">
                   <div>
-                    <div class="text-4xl pl-60 pt-20 font-bold">
+                    <div class="text-4xl pl-60 pt-20 font-bold" data-aos="fade-right">
                       <h1>Enriching Lives through <br>
                         Nourishment, Knowledge, <br>
                         and Healthcare.</h1>
                     </div>
                     <div>
                         <div class="block">
-                          <div class="flex">
+                          <div class="flex" data-aos="fade-right">
                             <img class="pl-60 pt-16" src="static/assets/food benefits.png" alt="">
                             <h1 class=" pl-5 pt-16 font-bold text-lg">Food Benefits</h1>
                           </div>
-                          <p class="text-gray-500 pl-72 pt-4">Our commitment to ending hunger drives us to provide free and nutritious meals <br>
+                          <p class="text-gray-500 pl-72 pt-4" data-aos="fade-up">Our commitment to ending hunger drives us to provide free and nutritious meals <br>
                              to those in need, ensuring food security and nourishment for all the marginalized <br>
                               individuals and families we serve.</p>
                         </div>
                         <div>
-                          <div class="flex">
+                          <div class="flex" data-aos="fade-right">
                           <img class="pl-60 pt-10" src="static/assets/Medical Benefits.png" alt="">
                             <h1 class=" pl-5 pt-10 font-bold text-lg">Medical Benefits</h1>
                           </div>
-                          <p class="text-gray-500 pl-72 pt-4">Empowering minds and igniting a passion for learning, our educational initiatives <br>
+                          <p class="text-gray-500 pl-72 pt-4" data-aos="fade-up">Empowering minds and igniting a passion for learning, our educational initiatives <br>
                             break down barriers, offering quality education and lifelong opportunities for both <br>
                             young minds and elders, fostering personal growth and development.</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex" data-aos="fade-right">
                           <img class="pl-60 pt-10" src="static/assets/Education.png" alt="">
                             <h1 class=" pl-5 pt-10 font-bold text-lg">Education</h1>
                           </div>
-                          <p class="text-gray-500 pl-72 pt-4">We believe that good health is a fundamental right, and we work tirelessly to <br>
+                          <p class="text-gray-500 pl-72 pt-4" data-aos="fade-up">We believe that good health is a fundamental right, and we work tirelessly to <br>
                             provide accessible medical support without any financial barriers, offering <br>
                             essential healthcare services to improve the well-being and resilience of our <br>
                             community.</p>
@@ -237,18 +237,18 @@
                           </div>
                         </div>
                   </span>
-                  <div class="pl-20 pt-40 space-x-3 font-semibold flex">
+                  <div class="pl-20 pt-40 space-x-3 font-semibold flex" data-aos="fade-right">
                     <h1 class="">LATEST CAUSES</h1>
                     <h1 class="underline w-8">_______________</h1>
                   </div>
-                  <div class="font-bold text-5xl pl-20 pt-20 ">
+                  <div class="font-bold text-5xl pl-20 pt-20 " data-aos="fade-up">
                     <h1 class="">Find the popular cause <br>
                       and donate them</h1>
                   </div>
                   <div class="flex" style="margin-left: 1%;">
                     <div class="pt-3">
-                        <div class="shadow-lg w-96">
-                        <div class="pl-7 pt-10" style="padding-left: 2.2rem;" >
+                        <div class="shadow-lg w-96" data-aos="flip-left">
+                        <div class="pl-7 pt-10" style="padding-left: 2.2rem;">
                             <img style="background-size: cover;" src="static/assets/Medical.png" alt="medical">
                         </div>
                         <div class="pl-14 pt-4 font-bold text-yellow-300">
@@ -289,7 +289,7 @@
                     </div>
                 </div>
                 <div class="pt-3">
-                    <div class="shadow-lg w-96">
+                    <div class="shadow-lg w-96" data-aos="flip-left">
                         <div class="pl-7 pt-10" style="padding-left: 2.2rem; ">
                             <img src="static/assets/Homeless.png" alt="Homeless">
                         </div>
@@ -330,7 +330,7 @@
                     </div>
                 </div>
                 <div class="pt-3">
-                    <div class="shadow-lg w-96">
+                    <div class="shadow-lg w-96" data-aos="flip-left">
                         <div class="pl-7 pt-10"  style="padding-left: 2.2rem; ">
                             <img src="static/assets/help for education.png" alt="medical">
                         </div>
@@ -371,7 +371,7 @@
                     </div>
                 </div>
                 <div class="pt-3">
-                    <div class="shadow-lg w-96">
+                    <div class="shadow-lg w-96" data-aos="flip-left">
                         <div class="pl-7 pt-10"  style="padding-left: 2.2rem; ">
                             <img src="static/assets/Help for food.png" alt="Homeless">
                         </div>
@@ -412,24 +412,24 @@
                     </div>
                 </div>
             </div>
-              <div class="text-red-500 font-bold pl-28 pt-10">
+              <div data-aos="fade-right" class="text-red-500 font-bold pl-28 pt-10">
                 <h1>TO BE GIVEN _______________</h1>
               </div>
-              <div class="text-3xl font-bold pl-28 pt-4">
+              <div class="text-3xl font-bold pl-28 pt-4" data-aos="fade-up">
                 <h1>We Believe that We can Save <br>
                   More Lifes with you</h1>
               </div>
               <div class="flex">
-                <div class="pl-28 pt-10">
+                <div class="pl-28 pt-10" data-aos="flip-right">
                   <img src="static/assets/people rised.png" alt="rised">
                 </div>
-                <div class="pl-8 pt-10">
+                <div class="pl-8 pt-10" data-aos="flip-right">
                   <img src="static/assets/volunteer.png" alt="volunteer">
                 </div>
-                <div class="pl-8 pt-10">
+                <div class="pl-8 pt-10" data-aos="flip-right">
                   <img src="static/assets/people saved.png" alt="saved">
                 </div>
-                <div class="pl-8 pt-10">
+                <div class="pl-8 pt-10" data-aos="flip-right">
                   <img src="static/assets/member.png" alt="member">
                 </div>
               </div>
@@ -448,7 +448,7 @@
                 </div>
               </div> 
               <div class="pt-40 text-center">
-                <h1>our Testimonials</h1>
+                <h1 class="pt-10 font-semibold" style="background-color: rgba(254, 234, 171, 1);">our Testimonials</h1>
               </div>
               <div class="pt-10 text-center font-bold text-3xl" style="background-color: rgba(254, 234, 171, 1);">
                 <h1>What People Say</h1>
