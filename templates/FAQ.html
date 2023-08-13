@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <div>
         <nav class=" " style="background-color: rgba(14, 14, 14, 1);">
           <div class= "bg-primary flex pb-6 pt-3">
@@ -129,22 +134,22 @@
     </div>
     </main>
     <main>
-      <div class="pl-28 pt-20 text-3xl font-bold">
+      <div class="pl-28 pt-20 text-3xl font-bold" data-aos="fade-right">
         <h1>Still Need Help</h1>
       </div>
-      <div class="pl-28 pt-4">
+      <div class="pl-28 pt-4" data-aos="fade-left">
         <p>We Enjoy Adapting Our Strategies To Offer <br>
           Every Client The Best Solutions That Are <br>
           At The Forefront Of The Industry.</p>
       </div>
       <div class="flex pb-16">
-        <div class="pl-28 pt-14">
+        <div class="pl-28 pt-14" data-aos="zoom-out">
           <img src="static/assets/Call Support.png" alt="support">
         </div>
-        <div class="pl-10 pt-14">
+        <div class="pl-10 pt-14" data-aos="zoom-out">
           <img src="static/assets/Chart with us.png" alt="chat">
         </div>
-        <div class="pl-10 pt-14">
+        <div class="pl-10 pt-14" data-aos="zoom-out">
           <img src="static/assets/Address.png" alt="address">
         </div>
       </div>
