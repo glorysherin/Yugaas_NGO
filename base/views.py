@@ -19,3 +19,5 @@ def contactus(request):
     return render(request,'contactus.html')
 def faq(request):
     return render(request,'FAQ.html')
+def login(request):
+    return render(request,'login.html')
