@@ -1,0 +1,151 @@
+:root{
+  --yellow:#febd09;
+  --black:#09090a;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1.5rem rgb(139, 133, 133);
+  --border:.2rem solid rgba(0,0,0,.1);
+  --outline:.1rem solid rgba(0,0,0,.1);
+  --outline-hover:.2rem solid var(--black);
+}
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+ }
+ html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+ }
+ body{
+  background: #fff;
+ }
+ .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3rem;
+    width: 60%;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--yellow);
+    color: var(--yellow);
+    cursor: pointer;
+    background: #fff;
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+   }
+   .btn:hover{
+    background: #febd09;
+    color: #fff;
+   }
+   .topic {
+    padding: 8%;
+    font-size: 20px;
+   }
+   .causes-box {
+    position: absolute;
+    top: 35%;
+    bottom: 0%;
+    right: 8%;
+    width: 85.5%;
+    height: 150%;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  .causes .causes-slider{
+    padding: 1rem;
+  }
+  .causes .causes-slider:first-child{
+    margin-bottom: 2rem;
+  }
+  .causes .causes-slider .box{
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 25%;
+    padding:2rem 3rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+  }
+  .causes .causes-slider .box:hover{
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+  }
+  .causes .causes-slider .box h3{
+    font-size: 2rem;
+    color: var(--yellow);
+    text-align: left;
+    margin-top: 5%;
+  }
+  .causes .causes-slider .box h1{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10%;
+  }
+  .causes .causes-slider .box h4{
+    text-align: left;
+    margin-top: 10%;
+  }
+  .skill-box{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 10px 20px;
+  }
+  .skill-box h2{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    padding-right: 90%;
+    margin-top: 5%;
+    text-align: right;
+    color: #09090a;
+    font-size: 150%;
+  }
+  .skill-box .skill-bar{
+    position: relative;
+    height: 100%;
+    width: 120%;
+    right: 10%;
+    display: block;
+    margin-top: 6px;
+    background: #f5dfa1;
+  }
+  .skill-box .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 60%;
+    right: 1%;
+    background: #febd09;
+  }
+  .skill-box .tooltip{
+    padding: 150%;
+    top: 20%;
+  }
+  .causes .causes-slider .raised h4{
+    margin-top: 5%;
+    color: #09090a;
+    font-size: 150%;
+    padding-right: 14%;
+    padding-top: 1%;
+  }
+  .causes .causes-slider .goal h4{
+    color: #09090a;
+    font-size: 150%;
+    padding-left: 60%;
+  }

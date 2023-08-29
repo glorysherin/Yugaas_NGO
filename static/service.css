@@ -1,0 +1,363 @@
+:root{
+  --yellow: #febd09;
+  --black:#130f40;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1.5rem rgb(139, 133, 133);
+  --border:.2rem solid rgba(0,0,0,.1);
+  --outline:.1rem solid rgba(0,0,0,.1);
+  --outline-hover:.2rem solid var(--black);
+}
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+ }
+ html{
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+ }
+ body{
+  background: #fff;
+  margin-left: 100px;
+  margin-right: 100px;
+ }
+ .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .5rem 0rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: var(--yellow);
+   }
+   header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+    background: #0c0c0c;
+   }
+  .header .logo{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: #fff;
+  }
+  .header .logo i{
+    color: var(--yellow);
+  }
+  .header .navbar a{
+    font-size: 1rem;
+    margin:0 1rem;
+    color: #fff;
+  }
+  .header .navbar .btn a{
+    color: #0c0c0c;
+  }
+  .header .navbar a:hover{
+    text-decoration: underline;
+  }
+  .container{
+    align-items: center;
+    display: flex;
+  }
+  .text{
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 40%;
+    flex: 5;
+  }
+  .text h4{
+    padding: 2rem;
+    padding-top: 15%;
+  }
+  .text h2{
+    padding: 1rem;
+  }
+  .text p{
+    padding: 1rem;
+  }
+  .text h1{
+    font-size: 10px;
+    padding-top: 5rem;
+  }
+  .image{
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+    padding-top: 6%;
+  }
+  .key h1{
+    width: 10%;
+    text-align: center;
+    background-image: url("C:/Users/Shalini Mariappan/Downloads/Ellipse 376.png");
+  }
+  .content{
+      flex: 1;
+      text-align: left;
+      padding-left: 40%;
+      text-align: justify;
+  }
+  .content h7{
+    padding-bottom: 10px;
+  }
+  .content h1{
+    padding-bottom: 10px;
+  }
+  .content h3{
+    padding-bottom: 10px;
+    font-weight: italic;
+  }
+  .together{
+    text-align: center;
+  }
+  .together img{
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+  .together h1{
+    padding-bottom: 0px;
+    padding-top: 80px;
+    font-size: 4rem;
+  }
+  .together h1 span{
+    color: var(--yellow);
+  }
+  .together p{
+    font-size: 1.5rem;
+    padding-top: 50px;
+  }
+  .together h2{
+    font-size: 3rem;
+    padding-bottom: 25px;
+  }
+  .together h2 span{
+    color: var(--yellow);
+  }
+  .containers{
+    align-items: center;
+    display: flex;
+    padding: 80px;
+  }
+  .texts{
+    text-align: left;
+    font-size: 1.3rem;
+    width: 40%;
+    flex: 5;
+  }
+  .btns{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    color: var(--black);
+    border: .2rem solid #543e01;
+    cursor: pointer;
+    background: var(--yellow);
+   }
+   .btne{
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    color: #fff;
+    border: .2rem solid #febd09;
+    cursor: pointer;
+    background: #0c0c0c;
+   }
+   .texts h1{
+    font-size: 10px;
+    padding-top: 3rem;
+  }
+  .flagship{
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 40%;
+    flex: 5;
+  }
+  .flagship h4{
+    padding: 2rem;
+    padding-top: .1rem;
+  }
+  .flagship h3{
+    padding: 1rem;
+  }
+  .flagship p{
+    padding: 1rem;
+  }
+  .flagship h1{
+    padding-top: 1rem;
+  }
+  .fservice{
+    align-items: center;
+    display: flex;
+  }
+  .para{
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .para h1{
+    padding-bottom: 10px;
+    padding-top: 50px;
+  }
+  .para p{
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .get p{
+    padding-bottom: 60px;
+    padding-top: 10px;
+  }
+  .get h4{
+    padding-bottom: 10px;
+    padding-top: 50px;
+  }
+  .you{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-image:url("C:/Users/Shalini Mariappan/Downloads/BG.png");
+    border-radius: 1rem;
+  }
+  .you h1{
+    font-size: 2rem;
+    color: #fff;
+  }
+  .btno{
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    color: #0c0c0c;
+    cursor: pointer;
+    background: #F2C94C;
+  }
+  .btnn{
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    color: #0c0c0c;
+    cursor: pointer;
+    background: #fff;
+  }
+.top{
+  width: 120%;
+  height: 10px;
+  margin-left: -100px;
+  margin-right: -100px;
+  padding-bottom: 20px;
+  background-color: #FFD349;
+  padding-top: 50px;
+  margin-top: 50px;
+  /*
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9%;
+  background: #febd09;
+  */
+}
+.top h3{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer{
+  background: #0c0c0c;
+  margin-left: -100px;
+  margin-right: -100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(1px,.5fr));
+}
+.footer .box-container .home h3{
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .box-container .sub h1{
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 0;
+ 
+}
+.footer .box-container .home .links{
+  display: block;
+  font-size: 1.2rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+.footer .box-container .home{
+  margin-left: 240px;
+}
+.footer .box-container .more{
+  margin-left: 10px;
+}
+.footer .box-container .connect{
+  margin-left: -230px;
+}
+.footer .box-container .more h3{
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .box-container .more .links{
+  display: block;
+  font-size: 1.2rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+.footer .box-container .connect h3{
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .box-container .connect .links{
+  display: block;
+  font-size: 1.2rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+.footer .box-container .sub{
+  margin-right: 120px;
+}
+.footer .box-container .sub .email{
+  width: 100%;
+  margin: .7rem 0;
+  padding: 1rem;
+  border-radius: .5rem;
+  background: #0c0c0c;
+  border: .2rem solid #666;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-transform: none;
+}
+.btnne{
+  margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    color: #0c0c0c;
+    cursor: pointer;
+    background: #fff;
+}
