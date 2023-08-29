@@ -14,6 +14,8 @@
   <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    rel="stylesheet"/>
   <style>
     body{
       overflow-x: hidden;
@@ -25,15 +27,34 @@
   background-size: cover; /* or background-size: contain; */
 }
 
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    /* Mobile-specific styles */
+    header {
+      background-color: rgba(14, 14, 14, 1);
+      padding: 10px;
+    }
+    /* Add more mobile styles as needed */
+  }
+
+  /* Tablet and Desktop Styles */
+  @media (min-width: 768px) {
+    /* Tablet and desktop-specific styles */
+    header {
+      background-color: rgba(14, 14, 14, 1);
+      padding: 20px;
+    }
+    /* Add more tablet and desktop styles as needed */
+  }
   </style>
 </head>
-<body class=" bg-background font-rob">
+<body>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
   <div>
-    <nav class=" bg-black">
+    <nav style="background-color: rgba(14, 14, 14, 1);">
       <div class= "bg-primary flex pb-6 pt-3">
         <div class="">
           <svg class="mt-6 ml-14" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,43 +62,48 @@
             </svg>
           </div>
             <h2 class="ml-1 mt-5 text-white">
-              Yugaas Tech
+              SivaAkshayamTrust
             </h2> 
-        <div class="flex justify-center mt-5 ml-52 px-32 text-white">
-          <div class="mr-7">
+        <div class="flex justify-center mt-5 ml-36 text-md px-32 text-white">
+          <div class="mr-7 text-white hover:text-yellow-200">
             <a href="base">
               Home
             </a>
           </div>
-          <div class="mr-7">
+          <div class="mr-7 text-white hover:text-yellow-200">
             <a href="aboutus">
-              About US
+              AboutUS
             </a>
           </div>
-          <div class="mr-7">
+          <div class="mr-7 text-white hover:text-yellow-200">
             <a href="our_services">
               Ourservices
             </a>
           </div>
-          <div class="mr-7">
+          <div class="mr-7 text-white hover:text-yellow-200">
+            <a href="Getinvolved">
+              Getinvolved
+            </a>
+          </div>
+          <div class="mr-7 text-white hover:text-yellow-200">
             <a href="Causes">
               Causes
             </a>
           </div>
-          <div class="mr-7">
+          <div class="mr-7 text-white hover:text-yellow-200">
             <a href="faq">
               FAQ's
             </a>
           </div>
-          <div class="mr-7">
+          <div class="mr-7 text-white hover:text-yellow-200">
             <a href="contactus">
-              Contact Us
+              ContactUs
             </a>
           </div>
         </div>
-        <div class="mt-2 ml-32 bg-yellow-300 text-black font-bold rounded-md">
-          <button class="h-12 w-40 text-black font-bold">Donate Now</button>
-        </div>
+          <div id="donate" class="mt-2 ml-32 text-black font-bold rounded-md" style="background-color:rgba(242, 201, 76, 1);">
+            <button class="h-12 w-40 text-black font-bold">Donate Now</button>
+          </div>
       </div>
     </nav>
   </div>
@@ -92,9 +118,9 @@
                   </h1>
                   <h2 class="text-white pl-28 pt-7">We Seek out world changers and difference makers around the <br>
                     globe,and equip them to fulfill their unique purpose.</h2>
-                    <div class="mt-7 ml-28 flex text-black ">
+                    <div class="mt-7 ml-28 flex text-black">
                       <div>
-                        <button class="h-12 w-40 bg-yellow-300 hover:bg-black font-bold rounded-md text-black border hover:border-yellow-300 hover:text-white">Donate Now</button>
+                        <button class="h-12 w-40 bg-yellow-300 hover:bg-black font-bold rounded-md text-black border hover:border-yellow-300 hover:text-white" style="background-color: rgba(242, 201, 76, 1);">Donate Now</button>
                       </div>
                       <div class="pl-10 text-white font-bold rounded-md border-yellow-300">
                         <button class="h-12 w-44 text-white  font-bold rounded-md border hover:border-yellow-300">Know About Us</button>
@@ -137,13 +163,13 @@
                       <div class="pl-60 pt-14 text-sm font-bold">
                         <h2>OUR MISSION</h2>
                       </div>
-                      <div class="pl-60 pt-4 font-bold text-2xl">
+                      <div class="pl-60 pt-4 font-bold text-2xl" data-aos="fade-right">
                         <h1>Empowering Lives Through <br>
                           Compassionate Outreach: Providing <br>
                           Essential Support to the Marginalized
                         </h1>
                       </div>
-                      <p class="pl-60 pt-5">
+                      <p class="pl-60 pt-5" data-aos="fade-up">
                         We offer free/affordable food, education, and medical care to the <br>
                          marginalized. Education empowers children and elders for a brighter <br>
                           future. Medical support without financial barriers for better health. <br>
