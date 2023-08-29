@@ -22,12 +22,18 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home', views.home),
     path('',views.base),
+    path('base',views.base),
     path('aboutus',views.aboutus),
     path('services',views.our_services),
     path('card',views.card),
     path('contactus',views.contactus),
     path('faq',views.faq),
+<<<<<<< HEAD
+    path('aboutus1',views.aboutus1),
+    path('aboutus2',views.aboutus2),
+=======
     path('login',views.login),
+>>>>>>> f7c1520abc16f5aca2a5f052a653e6d5aa45d64c
     #path('<int:id>/',views.detail)
 
 ]
