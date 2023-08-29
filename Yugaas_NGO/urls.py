@@ -30,6 +30,11 @@ urlpatterns = [
     path('faq',views.faq),
     path('aboutus1',views.aboutus1),
     path('aboutus2',views.aboutus2),
+<<<<<<< HEAD
+    path('login',views.login),
+
+=======
+>>>>>>> 85e5e84fecb76bf1f25d14fc8cdc2447d8f4bad8
     #path('<int:id>/',views.detail)
 
 ]
