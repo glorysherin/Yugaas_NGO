@@ -7,6 +7,10 @@ def base(request):
     return render(request,'base.html')
 def aboutus(request):
     return render(request,'aboutus.html')
+def aboutus1(request): 
+    return render(request, 'aboutus1.html')
+def aboutus2(request):
+    return render(request, 'aboutus2.html')
 def our_services(request):
     return render(request,'Our_Services.html')
 def card(request):
