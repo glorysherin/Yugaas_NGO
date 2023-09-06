@@ -2,13 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
@@ -19,127 +16,192 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
     rel="stylesheet"/>
-    <link rel="stylesheet" href="{% static 'base.css' %}">
+  <style>
+    /* body{
+      overflow-x: hidden;
+      
+  margin: 0;
+  padding: 0;
+    } */
+    .bg-cover {
+  background-size: cover; /* or background-size: contain; */
+}
+
+  /* Mobile Styles */
+  @media (max-width: 1572px) {
+    /* Mobile-specific styles */
+    header {
+      background-color: rgba(14, 14, 14, 1);
+      padding: 10px;
+    }
+    /* Add more mobile styles as needed */
+  }
+
+  /* Tablet and Desktop Styles */
+  @media (min-width: 768px) {
+    /* Tablet and desktop-specific styles */
+    header {
+      background-color: rgba(14, 14, 14, 1);
+      padding: 20px;
+    }
+    /* Add more tablet and desktop styles as needed */
+  }
+  </style>
 </head>
-<body>
-<<<<<<< HEAD
+<body class="overflow-x-hidden">
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <div class="lg:flex items-center justify-center max-xl:py-80 md:text-sm md:text-white " style="overflow-x:hidden;">
-    <nav style="background-color: rgba(14, 14, 14, 1);">
-      <div class= "bg-primary flex pb-6 pt-3 pr-12">
-        <div class="">
-          <svg class="mt-6 ml-14" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.12249 1.10573C7.50171 0.411796 8.49829 0.411796 8.87751 1.10573L9.96022 3.08693C10.1657 3.46292 10.5879 3.66622 11.0099 3.59244L13.234 3.20368C14.0129 3.06751 14.6343 3.84666 14.3282 4.57581L13.4543 6.65757C13.2884 7.05264 13.3927 7.50946 13.7135 7.79345L15.4041 9.28987C15.9963 9.814 15.7745 10.7856 15.0136 11.0009L12.8412 11.6156C12.4289 11.7323 12.1367 12.0986 12.1147 12.5265L11.9989 14.7813C11.9583 15.571 11.0604 16.0034 10.4176 15.5427L8.58254 14.2275C8.23429 13.9779 7.76571 13.9779 7.41746 14.2275L5.58236 15.5427C4.9396 16.0034 4.04172 15.571 4.00113 14.7813L3.88526 12.5265C3.86327 12.0986 3.57112 11.7323 3.15884 11.6156L0.986381 11.0009C0.225463 10.7856 0.00370476 9.814 0.595851 9.28987L2.28646 7.79344C2.6073 7.50946 2.71156 7.05264 2.54571 6.65757L1.6718 4.57581C1.36571 3.84666 1.98706 3.06751 2.76604 3.20368L4.99007 3.59244C5.41214 3.66622 5.83431 3.46292 6.03978 3.08693L7.12249 1.10573Z" fill="#F2C94C"/>
-=======
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Responsive Navbar</title>
-      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-    </head>
-    <body>
-      <div class="bg-primary" style="background-color: black;">
-        <div class="container mx-auto flex items-center justify-between py-4">
-          <!-- Logo and Name -->
-          <div class="flex items-center " style="flex-direction: row;">
-            <svg class="mt-1 ml-6" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.12249 1.10573C7.50171 0.411796 8.49829 0.411796 8.87751 1.10573L9.96022 3.08693C10.1657 3.46292 10.5879 3.66622 11.0099 3.59244L13.234 3.20368C14.0129 3.06751 14.6343 3.84666 14.3282 4.57581L13.4543 6.65757C13.2884 7.05264 13.3927 7.50946 13.7135 7.79345L15.4041 9.28987C15.9963 9.814 15.7745 10.7856 15.0136 11.0009L12.8412 11.6156C12.4289 11.7323 12.1367 12.0986 12.1147 12.5265L11.9989 14.7813C11.9583 15.571 11.0604 16.0034 10.4176 15.5427L8.58254 14.2275C8.23429 13.9779 7.76571 13.9779 7.41746 14.2275L5.58236 15.5427C4.9396 16.0034 4.04172 15.571 4.00113 14.7813L3.88526 12.5265C3.86327 12.0986 3.57112 11.7323 3.15884 11.6156L0.986381 11.0009C0.225463 10.7856 0.00370476 9.814 0.595851 9.28987L2.28646 7.79344C2.6073 7.50946 2.71156 7.05264 2.54571 6.65757L1.6718 4.57581C1.36571 3.84666 1.98706 3.06751 2.76604 3.20368L4.99007 3.59244C5.41214 3.66622 5.83431 3.46292 6.03978 3.08693L7.12249 1.10573Z" fill="#F2C94C"/>
-                </svg>              <!-- Your SVG icon -->
->>>>>>> 9b249a9a893341a82dbfa464ed5147d72f2b03a0
-            </svg>
-            <h2 class="ml-2 text-white font-semibold text-lg">SivaAkshayamTrust</h2>
-          </div>
-          <br>
-          <!-- Navigation List -->
-          <ul class="hidden md:flex space-x-4 text-white">
-            <li><a href="base" class="hover:text-yellow-200 ml-4 lg:mr-14"> Home</a></li>
-<!--dropdrown-->
-        <li class="relative">
-    <a href="aboutus" class="flex items-center -ml-14 justify-between hover:text-yellow-200" id="aboutUsToggle">
-        About Us
-        <svg class="justify-end w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-    </a>
-    <ul class="hidden absolute left-0 mt-2 bg-white rounded-md shadow-lg z-10" id="aboutUsSubMenu">
-        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Our Story</a></li>
-        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Mission</a></li>
-        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Team</a></li>
-    </ul>
-</li>
-<!--dropdown try end-->
-            <li><a href="services" class="hover:text-yellow-200 border-2 px-4">Our Services</a></li>
-            <li><a href="Getinvolved" class="hover:text-yellow-200">Getinvolved</a></li>
-            <li><a href="Causes" class="hover:text-yellow-200">Causes</a></li>
-            <li><a href="faq" class="hover:text-yellow-200"> FAQ's</a></li>
-            <li><a href="contactus" class="hover:text-yellow-200"> ContactUs</a></li>
-            <!-- Add other navigation items here -->
-            <li>
-                <div class="lg:hidden font-bold rounded-md" style="background-color: rgba(242, 201, 76, 1);">
-                    <a href="#" class="block text-center text-black font-bold py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8">Donate Now</a>
-                </div>
-            </li>
-          </ul>
-          
-          <!-- Donate Button (Desktop) -->
-          <div class="hidden md:block">
-            <div id="donate" class="text-black font-bold rounded-md" style="background-color: rgba(242, 201, 76, 1);">
-              <button class="h-12 px-4 text-black font-bold">Donate Now</button>
-            </div>
-          </div>
-          
-          <!-- Mobile Menu Icon (Mobile) -->
-          <div class="md:hidden ml-auto -mt-7">
-            <button id="mobile-menu-button" class="text-white p-2 focus:outline-none">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
-            </button>
-            
-          </div>
-        </div>
-      </div>
-      
+  <style>
+    /* Default styles for larger screens */
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(14, 14, 14, 1);
+      padding: 6px 12px;
+    }
 
-    </nav>
+    .donate-button{
+      background: rgba(242, 201, 76, 1);
+      border-radius: 5%;
+    }
+    /* Mobile menu icon styles */
+    .mobile-menu-icon {
+      display: none; /* Initially hide the icon on larger screens */
+      cursor: pointer;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-menu a {
+      margin-right: 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-menu a:hover {
+      color: #F2C94C;
+    }
+
+    /* Mobile menu styles */
+    .mobile-menu {
+      display: none;
+      flex-direction: row;
+      background-color: rgba(14, 14, 14, 1);
+      padding: 10px;
+    }
+
+    .show-mobile-menu {
+      display: block; /* Show the menu when the class is applied */
+    }
+
+    /* Close button styles */
+    .close-button {
+      align-self: flex-end;
+      cursor: pointer;
+      color: white;
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      /* Styles for small screens */
+      .nav-container {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .mobile-menu-icon {
+        display: block; /* Show the menu icon on small screens */ 
+      }
+      .nav-menu{
+        display: none;
+      }
+
+      .donate-button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="">
+        <svg class="mt-3 ml-7" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.12249 1.10573C7.50171 0.411796 8.49829 0.411796 8.87751 1.10573L9.96022 3.08693C10.1657 3.46292 10.5879 3.66622 11.0099 3.59244L13.234 3.20368C14.0129 3.06751 14.6343 3.84666 14.3282 4.57581L13.4543 6.65757C13.2884 7.05264 13.3927 7.50946 13.7135 7.79345L15.4041 9.28987C15.9963 9.814 15.7745 10.7856 15.0136 11.0009L12.8412 11.6156C12.4289 11.7323 12.1367 12.0986 12.1147 12.5265L11.9989 14.7813C11.9583 15.571 11.0604 16.0034 10.4176 15.5427L8.58254 14.2275C8.23429 13.9779 7.76571 13.9779 7.41746 14.2275L5.58236 15.5427C4.9396 16.0034 4.04172 15.571 4.00113 14.7813L3.88526 12.5265C3.86327 12.0986 3.57112 11.7323 3.15884 11.6156L0.986381 11.0009C0.225463 10.7856 0.00370476 9.814 0.595851 9.28987L2.28646 7.79344C2.6073 7.50946 2.71156 7.05264 2.54571 6.65757L1.6718 4.57581C1.36571 3.84666 1.98706 3.06751 2.76604 3.20368L4.99007 3.59244C5.41214 3.66622 5.83431 3.46292 6.03978 3.08693L7.12249 1.10573Z" fill="#F2C94C"/>
+          </svg>
+        </div>
+      <h2 class="ml-1 mt-3 text-white">SivaAkshayamTrust</h2>
+    </div>
+    <button class="mobile-menu-icon" id="mobile-menu-icon">
+      <!-- Hamburger icon -->
+      <svg height="30" id="IconChangeColor" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="30" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+    </button>
+    <div class="nav-menu text-sm">
+      <a href="base">Home</a>
+      <a href="aboutus">AboutUS</a>
+      <a href="services">Ourservices</a>
+      <a href="Getinvolved">Getinvolved</a>
+      <a href="Causes">Causes</a> 
+      <a href="faq">FAQ's</a>
+      <a href="contactus">ContactUs</a>
+    </div>
+    <div class="donate-button" id="donate-button">
+      <button class="h-12 w-40 text-black font-bold">Donate Now</button>
+    </div>
   </div>
 
-      <!-- Your page content goes here -->
-      
-      <script>
-         const aboutUsToggle = document.getElementById('aboutUsToggle');
-        const aboutUsSubMenu = document.getElementById('aboutUsSubMenu');
-        
-        aboutUsToggle.addEventListener('click', () => {
-            aboutUsSubMenu.classList.toggle('hidden');
-        });
-        
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const navigationList = document.querySelector('.hidden.md\\:flex');
-        
-        mobileMenuButton.addEventListener('click', () => {
-          navigationList.classList.toggle('hidden');
-        });
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="close-button" onclick="closeMobileMenu()">
+      Close
+    </button>
+    <div class="text-md text-white block">
+      <a href="base" class="block ml-10">Home</a>
+      <a href="aboutus" class="block ml-10">AboutUS</a>
+      <a href="services" class="block ml-10">Ourservices</a>
+      <a href="Getinvolved" class="block ml-10">Getinvolved</a>
+      <a href="Causes" class="block ml-10">Causes</a> 
+      <a href="faq" class="block ml-10">FAQ's</a>
+      <a href="contactus" class="block ml-10">ContactUs</a>
+    </div>
+  </div>
 
-        
-      </script>
+  <script>
+    // JavaScript to toggle the mobile menu when the icon is clicked
+    const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    mobileMenuIcon.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show-mobile-menu');
+    });
+
+    // JavaScript to close the mobile menu when the close button is clicked
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('show-mobile-menu');
+    }
+  </script>
             <div>
               {% block content %}
-              <main class=" xl:mx-0">
-                <div  class="bg-cover pt-4" style="background-image: url(/static/assets/children.png);">
-                  <h1 class="lg:text-white lg:pl-28 lg:pt-28 lg:text-7xl font-bold text-white text-center md:text-3xl md:pt-10 sm:text-white sm:text-center">
+              <main class="">
+                <div  class="bg-cover pt-4 xl:w-full mlg:w-full lg:w-full md:w-full sm:w-full" style="background-image: url(/static/assets/children1.png);">
+                  <h1 class="text-white text-7xl pl-28 pt-28 font-bold">
                     Helping Each Other <br>
                     Can Make World Better
                   </h1>
-                  <h2 class="lg:text-white lg:pl-28 lg:pt-7 md:max-w-md md:text-white md:pl-3 md:pt-7 sm:text-white sm:pl-3">We Seek out world changers and difference makers around the <br>  
+                  <h2 class="text-white pl-28 pt-10">We Seek out world changers and difference makers around the <br>  
                     globe,and equip them to fulfill their unique purpose.</h2>
-                    <div class="lg:mt-7 lg:ml-28 lg:flex lg:text-black">
+                    <div class="mt-7 ml-28 flex text-black">
                       <div>
                         <button class="h-12 w-40 bg-yellow-300 hover:bg-black font-bold rounded-md text-black border hover:border-yellow-300 hover:text-white" style="background-color: rgba(242, 201, 76, 1);">Donate Now</button>
                       </div>
@@ -150,9 +212,9 @@
                     <h1 class="pt-36 text-white pl-28 pb-16 font-semibold">230 children under our care  ___________________________________________________________________________________________________________________________________________  58 donations collected</h1>
                   </div>
                   <div class="pl-28 pt-7 font-Roboto">
-                    <h1 class="text-black">our Supporters</h1>
+                    <h1 class="text-black font-bold text-3xl">Our Supporters</h1>
                   </div>
-                  <div class="flex text-3xl text-gray-500" data-aos="fade-up" data-aos-duration="500">
+                  <div class="xl:flex mlg:flex lg:flex md:block sm:block  text-3xl text-gray-500" data-aos="fade-up" data-aos-duration="500">
                     <div class="pl-28 pt-8">
                       <h4>logoipsm</h4>
                     </div>
@@ -175,14 +237,13 @@
                     </div>
                   </div>
             
-                  <div class="pl-28 pt-8">
+                  <div class="pl-28 pt-8 xl:justify-center mlg:justify-center lg:justify-center md:justify-center sm:justify-center sm:w-11/12">
                     <img src="static/assets/NGO.png" alt="team">
                   </div>
-                  
-                  <div class="lg:flex block   " >
+                  <div class="xl:flex mlg:flex lg:flex md:block sm:block" >
                     <div class="-ml-28 text-left mr-10">
             
-                      <div class="pl-60 pt-14 text-sm font-bold">
+                      <div class="xl:pl-60 mlg:pl-60 md:pl-60 sm:pl-40 xs:pl-10 ss:pl-10 pt-14 text-sm text-black font-bold">
                         <h2>OUR MISSION</h2>
                       </div>
                       <div class="pl-60 pt-4 font-bold text-2xl" data-aos="fade-right">
@@ -202,7 +263,7 @@
                       </p>
                     </div>
                     <div>
-                      <div class="pl-40 pt-14 text-sm font-bold">
+                      <div class="xl:pl-40  mlg:pl-40 md:pl-40 sm:pl-10 pt-14 xs:pl-10 ss:pl-10 text-sm text-black font-bold">
                         <h2>OUR VISION</h2>
                       </div>
                       <div class="pl-40 pt-4 font-bold text-2xl" data-aos="fade-left">
@@ -226,9 +287,9 @@
                     <h1>WHAT WE DO</h1>
                     <h1>_______________</h1>
                   </div>
-                  <span class="inline-flex pr-10">
+                  <span class="xl:flex pr-10 mlg:flex lg:flex md:block sm:block">
                   <div>
-                    <div class="text-4xl pl-60 pt-20 font-bold" data-aos="fade-right">
+                    <div class="xl:text-4xl mlg:text-4xl lg:text-2xl md:text-xl sm:text-xl xs:text-xl ss:text-xl xl:pl-60 mlg:pl-40 lg:pl-28 md:pl-24 sm:pl-28 pt-20 font-bold" data-aos="fade-right">
                       <h1>Enriching Lives through <br>
                         Nourishment, Knowledge, <br>
                         and Healthcare.</h1>
@@ -264,7 +325,7 @@
                   </div>
                 </div>
                           <div>
-                            <img class="pl-24 pt-20" src="static/assets/unsplash_SBIak0pKUIE.png" alt="children">
+                            <img class="pl-24 pt-20 w-full sm:w-11/12 sm:pl-5" data-aos="zoom-in" src="static/assets/unsplash_SBIak0pKUIE.png" alt="children">
                           </div>
                         </div>
                   </span>
@@ -276,7 +337,7 @@
                     <h1 class="">Find the popular cause <br>
                       and donate them</h1>
                   </div>
-                  <div class="flex pl-16  " style="margin-left: 1%;">
+                  <div class="xl:flex pl-16 mlg:flex lg:flex md:block md:pl-10" style="margin-left: 1%;">
                     <div class="pt-3 ">
                         <div class="shadow-lg w-80" data-aos="flip-left">
                         <div class="pl-7 pt-10" style="padding-left: 2.2rem;">
@@ -450,8 +511,8 @@
                 <h1>We Believe that We can Save <br>
                   More Lifes with you</h1>
               </div>
-              <div class="flex">
-                <div class="pl-28 pt-10" data-aos="flip-right">
+              <div class="xl:flex mlg:flex lg:flex md:block sm:block xl:pl-28 mlg:pl-28 lg:pl-28 md:pl-16 sm:pl-8">
+                <div class="pl-8 pt-10" data-aos="flip-right">
                   <img src="static/assets/people rised.png" alt="rised">
                 </div>
                 <div class="pl-8 pt-10" data-aos="flip-right">
@@ -468,11 +529,11 @@
                 <div class="font-bold mt-20 ml-28 h-96" style="background-image: url(static/assets/BG.png); background-repeat: no-repeat;">
                   <h2 class=" pt-32 text-5xl text-center text-white">You can contribute to provide a place <br>
                     for children with special needs!</h2>
-                    <div class="flex content-center">
-                      <div class="pl-96 pt-12">
+                    <div class="xl:flex mlg:flex lg:flex md:flex sm:flexs content-center">
+                      <div class="xl:pl-96 xl:pt-12 mlg:pl-60 mlg:pt-20">
                         <button class="bg-yellow-300 hover:bg-white hover:text-black h-11 w-40 font-semibold rounded-md">Join as a volunteer</button>
                       </div>
-                      <div class="pl-40 pt-12 border-yellow-300">
+                      <div class="pl-40 pt-12  border-yellow-300">
                         <button class="bg-white hover:bg-yellow-300 hover:text-black h-10 w-28 font-semibold rounded-md">Donate</button>
                       </div>
                     </div>
@@ -486,13 +547,13 @@
               </div>
               <div class="flex" style="background-color: rgba(254, 234, 171, 1);">
                 <div class="pt-24 pl-60">
-                  <img src="static/assets/left.png" alt="left">
+                  <img src="static/assets/left.png" class="w-full" alt="left">
                 </div>
                 <div class=" pt-14 pl-20 ml-80">
-                  <img src="static/assets/profile.png" alt="profile">
+                  <img src="static/assets/profile.png" class="w-full" alt="profile">
                 </div>
                 <div class="pt-24 pl-96">
-                  <img src="static/assets/right.png" alt="right">
+                  <img src="static/assets/right.png" class="w-full" alt="right">
                 </div>
               </div>
               <div class="text-center pt-5" style="background-color: rgba(254, 234, 171, 1);">
@@ -510,9 +571,9 @@
           </div>
           <footer>
             <div class="font-extrabold text-center bg-yellow-400 h-16">
-              <h1 class="pt-6">Back to top</h1>
+              <h1 class="pt-6 cursor-pointer">Back to top</h1>
             </div>
-            <div class="flex bg-black text-white pb-20">
+            <div class="xl:flex mlg:flex lg:block md:block sm:block bg-black text-white pb-20">
               <div class="flex pl-20 text-sm">
                 <div>
                 <div class="pt-28 font-bold">
@@ -579,8 +640,7 @@
                 placeholder="Your email"
                 aria-label="Search"
                 aria-describedby="button-addon1" />
-          
-              <!--Search button-->
+                  
               <script>// Initialization for ES Users
                 import {
                   Ripple,

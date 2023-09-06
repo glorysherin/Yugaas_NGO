@@ -21,3 +21,9 @@ def faq(request):
     return render(request,'FAQ.html')
 def login(request):
     return render(request,'login.html')
+def causes(request):
+    return render ( request , "causes.html" )
+def Getinvolved(request):
+    return render(request,'Get_invloved.html')      
+def exception(request, exception):
+    return render(request, '404.html')
