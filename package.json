@@ -4,8 +4,13 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+<<<<<<< HEAD
       "build-css": "tailwindcss build -i static/dist/input.css -o static/dist/output.css",
       "css":" npx tailwindcss -i ./static/dist/input.css  -o ./static/dist/output.css --watch"
+=======
+      "build-css": "tailwindcss build -i src/styles.css -o public/styles.css",
+      "css":" npx tailwindcss -i ./static/dist/input.css -o ./dist/output.css --watch"
+>>>>>>> 6b46678edc3965ac1699c8f8693563a662091816
     },
     "keywords": [],
     "author": "",
