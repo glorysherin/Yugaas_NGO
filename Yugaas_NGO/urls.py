@@ -15,6 +15,8 @@ urlpatterns = [
     path('faq',views.faq),
     path('aboutus1',views.aboutus1),
     path('aboutus2',views.aboutus2),
+    path('aboutus3',views.aboutus3),
+    path('aboutus4',views.aboutus4),
     path('login',views.login),
     path('Causes',views.causes),
     path('Getinvolved', views.Getinvolved),
