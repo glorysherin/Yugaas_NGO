@@ -5,57 +5,470 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embracing Humanity</title>
     <link rel="stylesheet" href="/static/abouts.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/35af595706.js" crossorigin="anonymous"></script>
+    <style>
+      /* Custom CSS styles */
+      :root {
+          --yellow: #febd09;
+          --black: #130f40;
+      }
+
+      body {
+          background: #fff;
+      }
+
+      .top {
+          padding-top: 170px;
+          text-align: center;
+      }
+
+      .top h1 {
+          font-size: 2.5rem;
+      }
+
+      .top h3 {
+          font-size: 1.8rem;
+          color: var(--yellow);
+          padding-top: 30px;
+      }
+
+      .top p {
+          font-size: 1.6rem;
+          padding-top: 30px;
+      }
+
+      .content {
+          text-align: center;
+      }
+
+      .content h1 {
+          padding-top: 30px;
+      }
+
+      .content p {
+          padding-top: 20px;
+          font-size: 1.5rem;
+      }
+      /* body{
+        overflow-x: hidden;
+        
+    margin: 0;
+    padding: 0;
+      } */
+      .bg-cover {
+    background-size: cover; /* or background-size: contain; */
+  }
+  
+    /* Mobile Styles */
+    @media (max-width: 1572px) {
+      /* Mobile-specific styles */
+      header {
+        background-color: rgba(14, 14, 14, 1);
+        padding: 10px;
+      }
+      /* Add more mobile styles as needed */
+    }
+  
+    /* Tablet and Desktop Styles */
+    @media (min-width: 1200px) {
+      /* Tablet and desktop-specific styles */
+      header {
+        background-color: rgba(14, 14, 14, 1);
+        padding: 20px;
+      }
+      /* Add more tablet and desktop styles as needed */
+    }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <style>
+       /* Default styles for larger screens */
+       .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(14, 14, 14, 1);
+        padding: 6px 12px;
+      }
+  
+      /* Dropdown styles */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(14, 14, 14, 1);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+  
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+  
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+  
+      .dropdown-content a:hover {
+        background-color: black;
+        color: black;
+      }
+  
+      /* Mobile menu styles */
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(14, 14, 14, 1);
+        padding: 10px;
+      }
+  
+      .show-mobile-menu {
+        display: flex; /* Show the mobile menu when the class is applied */
+      }
+  
+      /* Close button styles */
+      .close-button {
+        align-self: flex-end;
+        cursor: pointer;
+        color: white;
+        margin-right: 10px;
+      }
+  
+      /* Mobile dropdown styles */
+      
+  
+      /* Default styles for larger screens */
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(14, 14, 14, 1);
+        padding: 6px 12px;
+      }
+  
+      .donate-button{
+        background: rgba(242, 201, 76, 1);
+        border-radius: 5%;
+      }
+      /* Mobile menu icon styles */
+      .mobile-menu-icon {
+        display: none; /* Initially hide the icon on larger screens */
+        cursor: pointer;
+      }
+  
+      .nav-logo {
+        display: flex;
+        align-items: center;
+      }
+  
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .nav-menu a {
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+      }
+  
+      .nav-menu a:hover {
+        color: #F2C94C;
+      }
+  
+      /* Mobile menu styles */
+      .mobile-menu {
+        display: none;
+        flex-direction: row;
+        background-color: rgba(14, 14, 14, 1);
+        padding: 10px;
+      }
+  
+      .show-mobile-menu {
+        display: block; /* Show the menu when the class is applied */
+      }
+  
+      /* Close button styles */
+      .close-button {
+        align-self: flex-end;
+        cursor: pointer;
+        color: white;
+        margin-right: 10px;
+      }
+  
+      @media screen and (max-width: 1200px) {
+        /* Styles for small screens */
+        .nav-container {
+          flex-direction: row;
+          align-items: center;
+        }
+  
+        .mobile-menu-icon {
+          display: block; /* Show the menu icon on small screens */ 
+        }
+        .nav-menu{
+          display: none;
+        }
+  
+        .donate-button {
+          display: none;
+        }
+      }
+      .mobile-dropdown {
+        display: none;
+      }
+  
+      .mobile-dropdown a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+  
+      .mobile-dropdown a:hover {
+        background-color: #F2C94C;
+        color: black;
+      }
+  
+      .show-mobile-menu .mobile-dropdown {
+        display: block;
+      }
+  </style>
 </head>
-<body>
-    <header class="header">
-        <a href="#" class="logo"><i class="fa-solid fa-star"></i>maha akshaya sivam trust</a>
-        <nav class="navbar">
-                <a href="#">home</a>
-                <a href="#">about us</a>
-                <a href="#">our services</a>
-                <a href="#">get involved</a>
-                <a href="#">causes</a>
-                <a href="#">FAQ's</a>
-                <a href="#">contact us</a>
-                <div class="btn">
-                <a href="#" class="btn">donate now</a>
-                </div>
-        </nav>
-    </header>
+
+<body class="overflow-x-hidden">
+
+<div class="nav-container">
+  <div class="nav-logo">
+    <div class="">
+      <svg class="ml-7" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.12249 1.10573C7.50171 0.411796 8.49829 0.411796 8.87751 1.10573L9.96022 3.08693C10.1657 3.46292 10.5879 3.66622 11.0099 3.59244L13.234 3.20368C14.0129 3.06751 14.6343 3.84666 14.3282 4.57581L13.4543 6.65757C13.2884 7.05264 13.3927 7.50946 13.7135 7.79345L15.4041 9.28987C15.9963 9.814 15.7745 10.7856 15.0136 11.0009L12.8412 11.6156C12.4289 11.7323 12.1367 12.0986 12.1147 12.5265L11.9989 14.7813C11.9583 15.571 11.0604 16.0034 10.4176 15.5427L8.58254 14.2275C8.23429 13.9779 7.76571 13.9779 7.41746 14.2275L5.58236 15.5427C4.9396 16.0034 4.04172 15.571 4.00113 14.7813L3.88526 12.5265C3.86327 12.0986 3.57112 11.7323 3.15884 11.6156L0.986381 11.0009C0.225463 10.7856 0.00370476 9.814 0.595851 9.28987L2.28646 7.79344C2.6073 7.50946 2.71156 7.05264 2.54571 6.65757L1.67180 4.57581C1.36571 3.84666 1.98706 3.06751 2.76604 3.20368L4.99007 3.59244C5.41214 3.66622 5.83431 3.46292 6.03978 3.08693L7.12249 1.10573Z" fill="#F2C94C"/>
+      </svg>
+    </div>
+    <h2 class="ml-1 text-white">SivaAkshayamTrust</h2>
+  </div>
+  <button class="mobile-menu-icon" id="mobile-menu-icon">
+    <!-- Hamburger icon -->
+    <svg height="30" id="IconChangeColor" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="30" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+  </button>
+  <div class="nav-menu text-sm">
+    <a href="base" class="ml-2">Home</a>
+    <div class="dropdown">
+      <a href="#" class="ml-2">About</a>
+      <div class="dropdown-content">
+        <a href="aboutus1">Maha Akshaya Sivam</a>
+        <a href="aboutus2">Our Motto</a>
+        <a href="aboutus3">Overview</a>
+        <a href="aboutus4">Embracing Humanity</a>
+      </div>
+    </div>
+    <a href="services" class="ml-2">Ourservices</a>
+    <div class="dropdown">
+      <a href="#" class="ml-2">Getinvolved</a>
+      <div class="dropdown-content">
+        <a href="Getinvolved">Join Our Team</a>
+        <a href="#">volunteer opportunities</a>
+        <a href="#">Support the Cause</a>
+        <a href="#">Fostering Collective Impact</a>
+      </div>
+    </div>
+    <a href="Causes" class="ml-2">Causes</a> 
+    <a href="faq" class="ml-2">FAQ's</a>
+    <a href="contactus" class="ml-2">ContactUs</a>
+  </div>
+  <div class="donate-button" id="donate-button">
+    <button class="h-12 w-40 text-black font-bold">Donate Now</button>
+  </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="close-button" onclick="closeMobileMenu()">
+    Close
+  </button>
+  <div class="text-md text-white block">
+    <a href="base" class="block ml-1">Home</a>
+    <div class="mobile-dropdown">
+      <a href="#" class="ml-1">About</a>
+      <a href="aboutus1" class="ml-4">Maha Akshaya Sivam</a>
+      <a href="aboutus2" class="ml-4">Out Motto</a>
+      <a href="#" class="ml-4">Overview</a>
+      <a href="#" class="ml-4">Embracing Humanity</a>
+    </div>
+    <a href="services" class="ml-1">Ourservices</a>
+    <div class="mobile-dropdown">
+      <a href="#">Getinvolved</a>
+      <a href="#" class="ml-4">Join Our Team</a>
+      <a href="#" class="ml-4">volunteer opportunities</a>
+      <a href="#" class="ml-4">Support the Cause</a>
+      <a href="#" class="ml-4">Fostering Collective Impact</a>
+    </div>
+    <a href="Causes" class="ml-1 block">Causes</a> 
+    <a href="faq" class="ml-1 block">FAQ's</a>
+    <a href="contactus" class="ml-1 block">ContactUs</a>
+  </div>
+</div>
     <div class="top">
-      <h1>Embracing Humanity : </h1>
-      <h2>Core Values and Principles Guiding the Organization</h2>
-      <h3>“Compassion, Inclusivity, and Service - The Soul of Maha Akshaya Sivam Trust”</h3>
-      <p><b>At the heart of Maha Akshaya Sivam Trust lie its core values and principles, the guiding stars that illuminate the path of compassion and service. Each value is a reflection of the trust's unwavering commitment to empowering lives, embracing souls, and creating a more equitable and compassionate world.</b></p>
+      <h1 class="font-bold">Embracing Humanity : </h1>
+      <h2 class="font-bold">Core Values and Principles Guiding the Organization</h2>
+      <h3 class="font-bold text-sm">“Compassion, Inclusivity, and Service - The Soul of Maha Akshaya Sivam Trust”</h3>
+      <p><b>At the heart of Maha Akshaya Sivam Trust lie its core values and principles, the guiding stars <br>
+         that illuminate the path of compassion and service. Each value is a reflection of the trust's <br>
+         unwavering commitment to empowering lives, embracing souls, and creating a more equitable <br>
+         and compassionate world.</b></p>
     </div>
     <div class="content">
-        <h1>1. Compassion:<span> Embracing the Essence of Humanity</span></h1>
-        <p>Compassion is the very foundation on which Maha Akshaya Sivam Trust stands tall. We believe in the profound truth that each individual, regardless of circumstance, deserves to be treated with love and empathy. It is with compassion that we reach out to those in need, providing sustenance, education, and medical support, ensuring that no soul is left behind.</p>
-        <h1>2. Inclusivity:<span> Bridging the Divide, Embracing Unity</span></h1>
-        <p>Inclusivity is the cornerstone of our mission. We transcend barriers of caste, creed, and community, believing that humanity knows no boundaries. We unite people from diverse backgrounds in the spirit of service, fostering a sense of togetherness that strengthens the fabric of our society.</p>
-        <h1>3. Dignity:<span> Respecting Every Soul's Journey</span></h1>
-        <p>We hold the inherent dignity of every individual in the highest regard. In life and in death, we endeavor to honor each soul with respect and grace. From dignified last rites for the unclaimed to providing holistic care, we believe in upholding the sanctity of life's journey with reverence.</p>
-        <h1>4. Empowerment:<span> Illuminating Lives, Igniting Hope</span></h1>
-        <p>Compassion is the very foundation on which Maha Akshaya Sivam Trust stands tall. We believe in the profound truth that each individual, regardless of circumstance, deserves to be treated with love and empathy. It is with compassion that we reach out to those in need, providing sustenance, education, and medical support, ensuring that no soul is left behind.</p>
-        <h1>5. Integrity:<span> Committed to Transparency and Trust</span></h1>
-        <p>Integrity is at the core of all our actions. We strive to be transparent and accountable in all our endeavors, ensuring that our donors, partners, and beneficiaries place their trust in us with confidence. Every step we take is guided by honesty and the genuine desire to make a positive impact.</p>
-        <h1>6. Innovation:<span> Embracing Progress, Embodying Change</span></h1>
-        <p>Innovation lies in our DNA. We embrace emerging technologies, modern ideas, and ancient wisdom, blending them harmoniously to create transformative solutions. Our commitment to innovation fuels our efforts to provide sustainable, cutting-edge services to those we serve.</p>
-        <h1>7. Gratitude:<span> Nurturing a Heart of Thankfulness</span></h1>
-        <p>>Gratitude is the soul's song of thankfulness for every blessing we receive. We are profoundly grateful to our donors, volunteers, partners, and all who join hands in our mission. It is with deep gratitude that we approach each day, knowing that together, we can create a more compassionate world.</p>
-        <h1>8. Bhagavad Gita's Teachings:<span> Selfless Service</span></h1>
-        <p>The Bhagavad Gita's timeless wisdom echoes in our commitment to selfless service (Nishkama Karma). Just as Lord Krishna advises Arjuna to perform his duty without attachment to the results, we serve with boundless love and compassion, without expecting anything in return.</p>
-        <h1>9. Ramayana's Ideals:<span> Integrity and Dharma</span></h1>
-        <p>The Ramayana exemplifies the virtues of integrity and adherence to Dharma (righteousness). We strive to embody these values in every action, upholding honesty and ethical conduct as we serve the community and honor the departed with dignity.</p>
-        <h1>10. Kanchi Maha Periva's Wisdom:<span> Compassionate Inclusivity</span></h1>
-        <p>Kanchi Maha Periva's teachings resonate through our organization's ethos of compassionate inclusivity. His vision of a harmonious society, embracing people from all walks of life, guides our efforts to serve humanity without any discrimination.</p>
-        <h1>11. Yogi Ramsuratkumar's Legacy:<span> Unconditional Love</span></h1>
-        <p>The legacy of Yogi Ramsuratkumar, the "Divine Beggar," influences our dedication to unconditional love. His life of selfless service to the needy inspires us to extend love and care to every soul we encounter, nurturing hope and healing hearts.</p>
-        <h1>12. Gnanananda Swamigal's Simplicity:<span> Humble Service</span></h1>
-        <p>Gnanananda Swamigal's simplicity and humility inspire us to serve with a compassionate heart. Just as he guided seekers towards inner wisdom, we offer support to those in need, fostering empowerment and nurturing a spirit of simplicity.</p>
-        <h1>13. Sivan Saar's Blessings:<span> Honoring Departed Souls</span></h1>
-        <p>Sivan Saar's divine presence and blessings echo in our unwavering commitment to honoring departed souls. Just as he shared his grace with those in his presence, we perform last rites for unclaimed individuals, ensuring they find eternal peace and dignity.</p>
-        <h1>14. Bhagavad Gita's Call to Action:<span> Empowerment and Courage</span></h1>
-        <p>The Bhagavad Gita's call to action (Yogakshemam Vahamyaham) emboldens us to empower others and provide succor in times of need. We find courage in the divine assurance that the welfare and protection of those we serve is divinely guided.</p>
+        <h1 class="font-bold text-3xl">1. Compassion:<span> Embracing the Essence of Humanity</span></h1>
+        <p>Compassion is the very foundation on which Maha Akshaya Sivam Trust stands tall. We believe in <br>
+           the profound truth that each individual, regardless of circumstance, deserves to be treated <br>
+           with love and empathy. It is with compassion that we reach out to those in need, providing <br>
+           sustenance, education, and medical support, ensuring that no soul is left behind.</p>
+        <h1 class="font-bold text-3xl">2. Inclusivity:<span> Bridging the Divide, Embracing Unity</span></h1>
+        <p>Inclusivity is the cornerstone of our mission. We transcend barriers of caste, creed, and
+          <br> community, believing that humanity knows no boundaries. We unite people from diverse <br> backgrounds  in the spirit of service, fostering a sense of togetherness that strengthens <br>the fabric of our society.</p>
+        <h1 class="font-bold text-3xl">3. Dignity:<span> Respecting Every Soul's Journey</span></h1>
+        <p>We hold the inherent dignity of every individual in the highest regard. In life and in death, we <br>endeavor to honor each soul with respect and grace. From dignified last rites for the<br> unclaimed to providing holistic care, we believe in upholding the sanctity of life's journey with<br> reverence.</p>
+        <h1 class="font-bold text-3xl">4. Empowerment:<span> Illuminating Lives, Igniting Hope</span></h1>
+        <p>Compassion is the very foundation on which Maha Akshaya Sivam Trust stands tall. We believe in<br> the profound truth that each individual, regardless of circumstance, deserves to be treated <br>with love and empathy. It is with compassion that we reach out to those in need, providing<br> sustenance, education, and medical support, ensuring that no soul is left behind.</p>
+        <h1 class="font-bold text-3xl">5. Integrity:<span> Committed to Transparency and Trust</span></h1>
+        <p>Integrity is at the core of all our actions. We strive to be transparent and accountable in all our<br> endeavors, ensuring that our donors, partners, and beneficiaries place their trust in us with<br> confidence. Every step we take is guided by honesty and the genuine desire to make a positive<br> impact.</p>
+        <h1 class="font-bold text-3xl">6. Innovation:<span> Embracing Progress, Embodying Change</span></h1>
+        <p>Innovation lies in our DNA. We embrace emerging technologies, modern ideas, and ancient<br> wisdom, blending them harmoniously to create transformative solutions. Our commitment to<br> innovation fuels our efforts to provide sustainable, cutting-edge services to those we serve.</p>
+        <h1 class="font-bold text-3xl">7. Gratitude:<span> Nurturing a Heart of Thankfulness</span></h1>
+        <p>Gratitude is the soul's song of thankfulness for every blessing we receive. We are profoundly<br> grateful to our donors, volunteers, partners, and all who join hands in our mission. It is with<br> deep gratitude that we approach each day, knowing that together, we can create a more<br> compassionate world.</p>
+        <h1 class="font-bold text-3xl">8. Bhagavad Gita's Teachings:<span> Selfless Service</span></h1>
+        <p>The Bhagavad Gita's timeless wisdom echoes in our commitment to selfless service (Nishkama<br> Karma). Just as Lord Krishna advises Arjuna to perform his duty without attachment to the<br> results, we serve with boundless love and compassion, without expecting anything in return.</p>
+        <h1 class="font-bold text-3xl">9. Ramayana's Ideals:<span> Integrity and Dharma</span></h1>
+        <p>The Ramayana exemplifies the virtues of integrity and adherence to Dharma (righteousness). We<br> strive to embody these values in every action, upholding honesty and ethical conduct as we<br> serve the community and honor the departed with dignity.</p>
+        <h1 class="font-bold text-3xl">10. Kanchi Maha Periva's Wisdom:<span> Compassionate Inclusivity</span></h1>
+        <p>Kanchi Maha Periva's teachings resonate through our organization's ethos of compassionate<br> inclusivity. His vision of a harmonious society, embracing people from all walks of life, guides<br> our efforts to serve humanity without any discrimination.</p>
+        <h1 class="font-bold text-3xl">11. Yogi Ramsuratkumar's Legacy:<span> Unconditional Love</span></h1>
+        <p>The legacy of Yogi Ramsuratkumar, the "Divine Beggar," influences our dedication to<br> unconditional love. His life of selfless service to the needy inspires us to extend love and care<br> to every soul we encounter, nurturing hope and healing hearts.</p>
+        <h1 class="font-bold text-3xl">12. Gnanananda Swamigal's Simplicity:<span> Humble Service</span></h1>
+        <p>Gnanananda Swamigal's simplicity and humility inspire us to serve with a compassionate heart.<br> Just as he guided seekers towards inner wisdom, we offer support to those in need, fostering<br> empowerment and nurturing a spirit of simplicity.</p>
+        <h1 class="font-bold text-3xl">13. Sivan Saar's Blessings:<span> Honoring Departed Souls</span></h1>
+        <p>Sivan Saar's divine presence and blessings echo in our unwavering commitment to honoring <br>departed souls. Just as he shared his grace with those in his presence, we perform last rites<br> for unclaimed individuals, ensuring they find eternal peace and dignity.</p>
+        <h1 class="font-bold text-3xl"  >14. Bhagavad Gita's Call to Action:<span> Empowerment and Courage</span></h1>
+        <p>The Bhagavad Gita's call to action (Yogakshemam Vahamyaham) emboldens us to empower <br>others and provide succor in times of need. We find courage in the divine assurance that the<br> welfare and protection of those we serve is divinely guided.</p>
     </div>
+    
+    <div class="" >
+      <div class="font-bold mt-20 ml-28 h-96" style="background-image: url(static/assets/BG.png); background-repeat: no-repeat;">
+        <h2 class=" pt-32 text-5xl text-center text-white">You can contribute to provide a place <br>
+          for children with special needs!</h2>
+          <div class="flex content-center">
+            <div class="pl-96 pt-12">
+              <button class="bg-yellow-300 hover:bg-white hover:text-black h-11 w-40 font-semibold rounded-md">Join as a volunteer</button>
+            </div>
+            <div class="pl-40 pt-12 border-yellow-300">
+              <button class="bg-white hover:bg-yellow-300 hover:text-black h-10 w-28 font-semibold rounded-md">Donate</button>
+            </div>
+          </div>
+      </div>
+    </div> 
+    <footer class="pt-16">
+      <div class="font-extrabold text-center bg-yellow-400 h-16">
+        <h1 class="pt-6 cursor-pointer">Back to top</h1>
+      </div>
+      <div class="flex bg-black text-white pb-20">
+        <div class="flex pl-20 text-sm">
+          <div>
+          <div class="pt-28 font-bold">
+          <a class="pl-60" href="">Home</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-60" href="">AboutUS</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-60" href="">Ourservices</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-60" href="">Getinvolved</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-60" href="">Causes</a>
+        </div>
+      </div>
+      <div>
+        <div class="pt-28 font-bold">
+          <a class="pl-36" href="">More</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-36" href="">FAQ's</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-36" href="">ContactUS</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-36" href="">Donate</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-36" href="">Blog</a>
+        </div>
+      </div>
+      <div>
+        <div class="pt-28 font-bold">
+          <a class="pl-36" href="">Connect</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-36" href="">Facebook</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-36" href="">Instagram</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-36" href="">Twitter</a>
+        </div>
+        <div class="pt-5">
+          <a class="pl-36" href="">Linkedin</a>
+        </div>
+      </div>
+    </div>
+    <div class="block pt-32 pl-32">
+      <div class="text-4xl font-bold">
+        <h1>Subscribe to get latest <br>
+        updates</h1>
+    </div>
+    <div class="mb-3 pt-7">
+      <div class="relative mb-4 flex h-14 rounded-md w-10/11 bg-black flex-wrap items-stretch">
+        <input
+        type="search"
+        class="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-black focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+          placeholder="Your email"
+          aria-label="Search"
+          aria-describedby="button-addon1" />
+    
+        <!--Search button-->
+        <script>// Initialization for ES Users
+          import {
+            Ripple,
+            initTE,
+          } from "tw-elements";
+          
+          initTE({ Ripple });</script>
+          <button
+          class="relative z-[2] flex items-center rounded-r bg-white px-6 py-2.5 text-xs font-medium uppercase leading-tight text-black shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+          type="button"
+          id="button-addon1"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </footer>
