@@ -11,6 +11,10 @@ def aboutus1(request):
     return render(request, 'aboutus1.html')
 def aboutus2(request):
     return render(request, 'aboutus2.html')
+def aboutus3(request):
+    return render(request, 'aboutus3.html')
+def aboutus4(request):
+    return render(request, 'aboutus4.html')
 def our_services(request):
     return render(request,'Our_Services.html')
 def card(request):
@@ -21,3 +25,9 @@ def faq(request):
     return render(request,'FAQ.html')
 def login(request):
     return render(request,'login.html')
+def causes(request):
+    return render ( request , "causes.html" )
+def Getinvolved(request):
+    return render(request,'Get_invloved.html')      
+def exception(request, exception):
+    return render(request, '404.html')

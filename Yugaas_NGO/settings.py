@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-be@v@w8x^wn3-f0gk^m)gcs5@1kk5ylsxm&a_$i$m(8#=dir*(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -74,12 +74,12 @@ WSGI_APPLICATION = 'Yugaas_NGO.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
+''' DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
+} '''
 
 
 # Password validation
