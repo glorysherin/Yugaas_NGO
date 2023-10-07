@@ -1,0 +1,17 @@
+body{
+    padding: 2rem;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:#fff;
+}
+.container{
+    border-radius: .5rem;
+    box-shadow: 10px 20px 25px rgba(12, 2, 2, 0.3);
+    overflow: hidden;
+    background-image: url(https://images.blocksurvey.io/cdn-cgi/imagedelivery/G6cPOuGZ4Z_bEV13gBxixw/templates/questions-you-should-ask.svg/s);
+    max-width: 100%;
+    width: 800px;
+}

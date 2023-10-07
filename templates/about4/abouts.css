@@ -1,0 +1,100 @@
+:root{
+    --yellow: #febd09;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgb(139, 133, 133);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+  }
+   *{
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: all .2s linear;
+   }
+   html{
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+   }
+   body{
+    background: #fff;
+    margin-left: 100px;
+    margin-right: 100px;
+   }
+   .btn{
+      margin-top: 1rem;
+      display: inline-block;
+      padding: .5rem 0rem;
+      font-size: 1.5rem;
+      border-radius: .5rem;
+      color: var(--black);
+      cursor: pointer;
+      background: var(--yellow);
+     }
+     header{
+      position: fixed;
+      top: 0;left: 0;right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 9%;
+      background: #0c0c0c;
+     }
+    .header .logo{
+      font-size: 1.6rem;
+      font-weight: bolder;
+      color: #fff;
+    }
+    .header .logo i{
+      color: var(--yellow);
+    }
+    .header .navbar a{
+      font-size: 1rem;
+      margin:0 1rem;
+      color: #fff;
+    }
+    .header .navbar .btn a{
+      color: #0c0c0c;
+    }
+    .header .navbar a:hover{
+      text-decoration: underline;
+    }
+  .top{
+   padding-top: 170px;
+   text-align: center;
+  }
+  .top h1{
+    font-size: 2.5rem;
+  }
+  .top h2{
+    font-size: 3rem;
+    color: #666;
+  }
+  .top h3{
+    font-size: 1.8rem;
+    color: #febd09;
+    padding-top: 30px;
+  }
+  .top p{
+    font-size: 1.6rem;
+    padding-top: 30px;
+  }
+  .content h1{
+    padding-top: 30px;
+  }
+  .content p{
+    padding-top: 20px;
+    font-size: 1.3rem;
+  }
+  .content h1 span{
+    font-size: 2rem;
+    color: #666;
+  }
