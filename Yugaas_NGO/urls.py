@@ -20,6 +20,11 @@ urlpatterns = [
     path('login',views.login),
     path('Causes',views.causes),
     path('Getinvolved', views.Getinvolved),
+    path('volunteer', views.volunteer),
+    path('support',views.support),
+    path('impact',views.impact),
+    path('Donate',views.Donate),
+    path('foster',views.foster),
 
     #path('<int:id>/',views.detail)
 

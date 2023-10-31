@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+    <div class="">
+      <style>
+        /* body{
+          overflow-x: hidden;
+      
+      margin: 0;
+      padding: 0;
+        } */
+        .bg-cover {
+      background-size: cover; /* or background-size: contain; */
+    }
+    
+      /* Mobile Styles */
+      @media (max-width: 1572px) {
+        /* Mobile-specific styles */
+        header {
+          background-color: rgba(14, 14, 14, 1);
+          padding: 10px;
+        }
+        /* Add more mobile styles as needed */
+      }
+    
+      /* Tablet and Desktop Styles */
+      @media (min-width: 1200px) {
+        /* Tablet and desktop-specific styles */
+        header {
+          background-color: rgba(14, 14, 14, 1);
+          padding: 20px;
+        }
+        /* Add more tablet and desktop styles as needed */
+      }
+      </style>
+    </head>
+    <body class="overflow-x-hidden">
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <style>
+         /* Default styles for larger screens */
+         .nav-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: rgba(14, 14, 14, 1);
+          padding: 6px 12px;
+        }
+    
+        /* Dropdown styles */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgba(14, 14, 14, 1);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+    
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+    
+        .dropdown-content a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+    
+        .dropdown-content a:hover {
+          background-color: black;
+          color: black;
+        }
+    
+        /* Mobile menu styles */
+        .mobile-menu {
+          display: none;
+          flex-direction: column;
+          background-color: rgba(14, 14, 14, 1);
+          padding: 10px;
+        }
+    
+        .show-mobile-menu {
+          display: flex; /* Show the mobile menu when the class is applied */
+        }
+    
+        /* Close button styles */
+        .close-button {
+          align-self: flex-end;
+          cursor: pointer;
+          color: white;
+          margin-right: 10px;
+        }
+    
+        /* Mobile dropdown styles */
+        
+    
+        /* Default styles for larger screens */
+        .nav-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: rgba(14, 14, 14, 1);
+          padding: 6px 12px;
+        }
+    
+        .donate-button{
+          background: rgba(242, 201, 76, 1);
+          border-radius: 5%;
+        }
+        /* Mobile menu icon styles */
+        .mobile-menu-icon {
+          display: none; /* Initially hide the icon on larger screens */
+          cursor: pointer;
+        }
+    
+        .nav-logo {
+          display: flex;
+          align-items: center;
+        }
+    
+        .nav-menu {
+          display: flex;
+          justify-content: center;
+        }
+    
+        .nav-menu a {
+          margin-right: 15px;
+          color: white;
+          text-decoration: none;
+        }
+    
+        .nav-menu a:hover {
+          color: #F2C94C;
+        }
+    
+        /* Mobile menu styles */
+        .mobile-menu {
+          display: none;
+          flex-direction: row;
+          background-color: rgba(14, 14, 14, 1);
+          padding: 10px;
+        }
+    
+        .show-mobile-menu {
+          display: block; /* Show the menu when the class is applied */
+        }
+    
+        /* Close button styles */
+        .close-button {
+          align-self: flex-end;
+          cursor: pointer;
+          color: white;
+          margin-right: 10px;
+        }
+    
+        @media screen and (max-width: 1200px) {
+          /* Styles for small screens */
+          .nav-container {
+            flex-direction: row;
+            align-items: center;
+          }
+    
+          .mobile-menu-icon {
+            display: block; /* Show the menu icon on small screens */ 
+          }
+          .nav-menu{
+            display: none;
+          }
+    
+          .donate-button {
+            display: none;
+          }
+        }
+        .mobile-dropdown {
+          display: none;
+        }
+    
+        .mobile-dropdown a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+    
+        .mobile-dropdown a:hover {
+          background-color: #F2C94C;
+          color: black;
+        }
+    
+        .show-mobile-menu .mobile-dropdown {
+          display: block;
+        }
+      </style>
+    
+    </head>
+    <body class="overflow-x-hidden">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="">
+            <img src="../static/assets/logo-white.png" class="h-14 w-14" />
+          </div>
+          <h2 class="ml-1 text-white">SivaAkshayamTrust</h2>
+        </div>
+        <button class="mobile-menu-icon" id="mobile-menu-icon">
+          <svg height="30" id="IconChangeColor" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="30" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+        </button>
+        <div class="nav-menu text-sm">
+          <a href="base" class="ml-2">Home</a>
+          <div class="dropdown">
+            <a href="#" class="ml-2">About</a>
+            <div class="dropdown-content">
+              <a href="aboutus1">Maha Akshaya Sivam</a>
+              <a href="aboutus2">Our Motto</a>
+              <a href="aboutus3">Overview</a>
+              <a href="aboutus4">Embracing Humanity</a>
+            </div>
+          </div>
+          <a href="services" class="ml-2">Ourservices</a>
+          <div class="dropdown">
+            <a href="#" class="ml-2">Getinvolved</a>
+            <div class="dropdown-content">
+              <a href="Getinvolved">Join Our Team</a>
+              <a href="volunteer">volunteer opportunities</a>
+              <a href="support">Support the Cause</a>
+              <a href="foster">Fostering Collective Impact</a>
+              <a href="impact">Impact</a>
+            </div>
+          </div>
+          <a href="Causes" class="ml-2">Causes</a> 
+          <a href="faq" class="ml-2">FAQ's</a>
+          <a href="contactus" class="ml-2">ContactUs</a>
+        </div>
+        <div class="donate-button" id="donate-button">
+          <a href="Donate"><button class="h-12 w-40 text-black font-bold hover:text-white">Donate Now</button></a>
+        </div>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <button class="close-button" onclick="closeMobileMenu()">
+          Close
+        </button>
+        <div class="text-md text-white block">
+          <a href="base" class="block ml-1">Home</a>
+          <div class="mobile-dropdown">
+            <a href="#" class="ml-1">About</a>
+            <a href="aboutus1" class="ml-4">Maha Akshaya Sivam</a>
+            <a href="aboutus2" class="ml-4">Out Motto</a>
+            <a href="aboutus3" class="ml-4">Overview</a>
+            <a href="aboutus4" class="ml-4">Embracing Humanity</a>
+          </div>
+          <a href="services" class="ml-1">Our Services</a>
+          <div class="mobile-dropdown">
+            <a href="#">Getinvolved</a>
+            <a href="Getinvolved" class="ml-4">Join Our Team</a>
+            <a href="volunteer" class="ml-4">volunteer opportunities</a>
+            <a href="support" class="ml-4">Support the Cause</a>
+            <a href="foster" class="ml-4">Fostering Collective Impact</a>
+            <a href="impact" class="ml-4">Fostering Collective Impact</a>
+          </div>
+          <a href="Causes" class="ml-1 block">Causes</a> 
+          <a href="faq" class="ml-1 block">FAQ's</a>
+          <a href="contactus" class="ml-1 block">ContactUs</a>
+        </div>
+      </div>
+    
+      <script>
+         // JavaScript to toggle the mobile menu when the icon is clicked
+         const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+         const mobileMenu = document.getElementById('mobile-menu');
+     
+         mobileMenuIcon.addEventListener('click', () => {
+           mobileMenu.classList.toggle('show-mobile-menu');
+         });
+     
+         // JavaScript to close the mobile menu when the close button is clicked
+         function closeMobileMenu() {
+           mobileMenu.classList.remove('show-mobile-menu');
+         }
+      </script>
+    
+    </div>
+</body>
+<main>
+    <div>
+        <h1 class="flex font-bold justify-center pt-10 text-4xl text-yellow-400">Fostering Collective Impact: Collaboration Opportunities with Various Organizations</h1>
+    </div>
+    <div>
+        <h4 class="flex pl-32 font-semilight text-2xl pt-10">Get Involved ______</h4>
+    </div>
+    <div class="flex">
+    <div>
+            <div>
+                <p class="font-semilight text-2xl pt-7 pl-32">
+                  At Maha Akshaya Sivam Trust, we believe in the <br>
+                  power of collaboration to create a positive and <br>
+                  lasting impact on the lives of those in need. We <br>
+                  actively seek to build strong partnerships with a <br>
+                   diverse range of organizations, including <br>
+                   governmental agencies, old age homes, orphanages, <br>
+                    other NGOs, and social service organizations. <br>
+                     Together, we can enhance our collective efforts <br>
+                      and serve people better, illuminating countless lives with <br>
+                       compassion and care.
+                </p>
+            </div>
+        </div>
+            <div>
+            <img class="pl-28" src="../static/assets/foster.png" alt="Teach">
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1 class="font-bold pl-24 pt-32 text-4xl">1. Governmental Agencies: Coordinating for a Better Tomorrow</h1>
+        </div>
+        <div>
+            <p class="font-semilight text-3xl pt-7 pl-32">Collaborating with governmental agencies is essential to ensure our initiatives align with broader development goals and policies. By joining forces with local and national authorities, we can work together to address systemic challenges and create sustainable solutions. Our collaboration fosters a cohesive approach towards eradicating hunger, providing quality education, and improving healthcare access for the most vulnerable members of society.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1 class="font-bold pl-24 pt-10 text-4xl">2. Old Age Homes: Nurturing Love and Respect for the Elderly</h1>
+        </div>
+        <div>
+            <p class="font-semilight text-3xl pt-7 pl-32">Partnering with old age homes allows us to extend our compassionate outreach to the elderly. Through joint programs and services, we can enrich the lives of senior citizens with companionship, emotional support, and specialized medical care. Our aim is to create an environment that fosters dignity, love, and respect for the elderly, acknowledging their invaluable contributions to society.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1 class="font-bold pl-24 pt-10 text-4xl">3. Orphanages: Empowering the Next Generation</h1>
+        </div>
+        <div>
+            <p class="font-semilight text-3xl pt-7 pl-32">Collaborating with orphanages is a heartwarming endeavor to empower the next generation. By working together, we can provide underprivileged children with nurturing environments, quality education, and life skills training. Our collective efforts nurture their dreams and ambitions, preparing them to lead fulfilling lives and contribute positively to society.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1 class="font-bold pl-24 pt-10 text-4xl">4. Other NGOs and Service Organizations: Amplifying Impact</h1>
+        </div>
+        <div>
+            <p class="font-semilight text-3xl pt-7 pl-32">Building partnerships with other NGOs and service organizations allows us to leverage diverse expertise, resources, and reach. By sharing best practices and innovative approaches, we amplify our collective impact on social issues. Our collaboration strengthens community networks, enhances efficiency, and opens doors to new possibilities of transformative change.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1 class="font-bold pl-24 pt-10 text-4xl">5. Joint Advocacy: Voices of Change</h1>
+        </div>
+        <div>
+            <p class="font-semilight text-3xl pt-7 pl-32">Through unified advocacy efforts, we can raise our voices collectively to champion the rights and well-being of the marginalized. By working hand in hand, we have the power to influence policies, drive positive social change, and create a more equitable and inclusive society for all.</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1 class="flex justify-center font-bold pl-24 pt-10 text-4xl">Join Hands with Us</h1>
+        </div>
+        <div>
+            <p class="font-semilight text-3xl pt-7 pl-32">If you represent any of these organizations and share our vision of a compassionate world, we invite you to join hands with Maha Akshaya Sivam Trust. Together, we can foster a collective impact that brightens the lives of countless individuals and families in need.</p>
+        </div>
+    </div>
+    <div>
+        <h1 class="flex justify-center pt-10 font-bold text-4xl">Fill this to be part of Volunteer!!</h1>
+    </div>
+    <div class="">
+    <div class="flex justify-center">
+      <div>
+        <div class="text-lg pl-28 pt-16">
+          <h1>First name</h1>
+        </div>
+        <div class="text-md pl-28 pt-2">
+          <input type="text" class="h-12 w-60 pl-3 rounded-lg" placeholder="Your First Name" style="background-color: rgba(254, 234, 171, 0.68);">
+        </div>
+      </div>
+      <div>
+        <div class="text-lg pl-28 pt-16">
+          <h1>Last name</h1>
+        </div>
+        <div class="text-md pl-28 pt-2">
+          <input type="text" class="h-12 pl-3 w-60 rounded-lg" placeholder="Your First Name" style="background-color: rgba(254, 234, 171, 0.68);">
+        </div>
+  </div>
+</div>
+      <div class="flex justify-center">
+          <div>
+            <div class="text-lg pl-28 pt-8">
+              <h1>Mail</h1>
+            </div>
+            <div class="text-md pl-28 pt-2">
+              <input type="text" class="h-12 w-60 pl-3 rounded-lg" placeholder="Your  Mail" style="background-color: rgba(254, 234, 171, 0.68);">
+            </div>
+          </div>
+          <div>
+            <div class="text-lg pl-28 pt-8">
+              <h1>Phone</h1>
+            </div>
+            <div class="text-md pl-28 pt-2">
+              <input type="text" class="h-12 pl-3 w-60 rounded-lg" placeholder="+91  " style="background-color: rgba(254, 234, 171, 0.68);">
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div>
+            <div class="text-md pl-28 pt-10">
+              <h1>Message</h1>
+            </div>
+            <div class="text-md pl-28 pt-10">
+              <input type="text" class="h-28 w-96 pl-10 pb-10 rounded-lg" placeholder="Type your message here" style="background-color: rgba(254, 234, 171, 0.68);">
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="pl-28 pt-10 pb-20">
+            <button class="rounded-lg h-10 w-32" style="background-color: rgba(242, 201, 76, 1);">Send Message</button>
+          </div>
+        </div>    
+      </div>
+      <footer class="overflow-x-hidden">
+        <div class="font-extrabold text-center bg-yellow-400 h-16">
+          <h1 class="pt-6 cursor-pointer">Back to top</h1>
+        </div>
+        <div class="xl:flex mlg:flex lg:block md:block sm:block xl:pl-20 mlg:pl-20 lg:pl-10 md:pl-10 sm:pl-10 ss:pl-10 xs:pl-10 bg-black text-white pb-20">
+          <div class="flex xl:pl-20 mlg:pl-20 lg:pl-10 md:pl-10 sm:pl-7 xl:text-sm mlg:text-sm lg:text-sm md:text-sm sm:text-sm xs:text-xs ss:text-xs">
+            <div>
+            <div class="pt-28 font-bold">
+            <a class="xl:pl-60 mlg:pl-40 lg:pl-40 md:pl-20 sm:pl-16 ss:pl-20 xs:pl-20" href="">Home</a>
+          </div>
+          <div class="pt-5">
+            <a class="xl:pl-60 mlg:pl-40 lg:pl-40 md:pl-20 sm:pl-16 ss:pl-20 xs:pl-20" href="">AboutUS</a>
+          </div>
+          <div class="pt-5">
+            <a class="xl:pl-60 mlg:pl-40 lg:pl-40 md:pl-20 sm:pl-16 ss:pl-20 xs:pl-20" href="">Ourservices</a>
+          </div>
+          <div class="pt-5">
+            <a class="xl:pl-60 mlg:pl-40 lg:pl-40 md:pl-20 sm:pl-16 ss:pl-20 xs:pl-20" href="">Getinvolved</a>
+          </div>
+          <div class="pt-5">
+            <a class="xl:pl-60 mlg:pl-40 lg:pl-40 md:pl-20 sm:pl-16 ss:pl-20 xs:pl-20" href="">Causes</a>
+          </div>
+        </div>
+        <div>
+          <div class="pt-28 font-bold">
+            <a class="pl-36" href="">More</a>
+          </div>
+          <div class="pt-5">
+            <a class="pl-36" href="">FAQ's</a>
+          </div>
+          <div class="pt-5">
+            <a class="pl-36" href="">ContactUS</a>
+          </div>
+          <div class="pt-5">
+            <a class="pl-36" href="">Donate</a>
+          </div>
+          <div class="pt-5">
+            <a class="pl-36" href="">Blog</a>
+          </div>
+        </div>
+        <div>
+          <div class="pt-28 font-bold">
+            <a class="pl-36" href="">Connect</a>
+          </div>
+          <div class="pt-5">
+            <a class="pl-36" href="">Facebook</a>
+          </div>
+          <div class="pt-5">
+            <a class="pl-36" href="">Instagram</a>
+          </div>
+          <div class="pt-5">
+            <a class="pl-36" href="">Twitter</a>
+          </div>
+          <div class="pt-5">
+            <a class="pl-36" href="">Linkedin</a>
+          </div>
+        </div>
+      </div>
+      <div class="block pt-32 pl-32">
+        <div class="text-4xl font-bold">
+          <h1>Subscribe to get latest <br>
+          updates</h1>
+      </div>
+      <div class="mb-3 pt-7">
+        <div class="relative mb-4 flex h-14 rounded-md w-10/11 bg-black flex-wrap items-stretch">
+          <input
+          type="search"
+          class="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-black focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+            placeholder="Your email"
+            aria-label="Search"
+            aria-describedby="button-addon1" />
+              
+          <script>// Initialization for ES Users
+            import {
+              Ripple,
+              initTE,
+            } from "tw-elements";
+            
+            initTE({ Ripple });</script>
+            <button
+            class="relative z-[2] flex items-center rounded-r bg-white px-6 py-2.5 text-xs font-medium uppercase leading-tight text-black shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+            type="button"
+            id="button-addon1"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </footer>
+</main>
+</html>

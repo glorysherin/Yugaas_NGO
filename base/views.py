@@ -28,6 +28,16 @@ def login(request):
 def causes(request):
     return render ( request , "causes.html" )
 def Getinvolved(request):
-    return render(request,'Get_invloved.html')      
+    return render(request,'Get_invloved.html')  
+def volunteer(request):
+    return render(request,'get1.html')
+def support(request):
+    return render(request,'support.html')  
+def foster(request):
+    return render(request,'foster.html')
+def impact(request):
+    return render(request,'impact.html') 
+def Donate(request):
+    return render(request,'Donate.html')
 def exception(request, exception):
     return render(request, '404.html')

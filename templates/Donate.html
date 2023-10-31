@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"/>
+    <title>DonateUs</title>
+</head>
+<body>
+    <style>
+        /* body{
+          overflow-x: hidden;
+      
+      margin: 0;
+      padding: 0;
+        } */
+        .bg-cover {
+      background-size: cover; /* or background-size: contain; */
+    }
+    
+      /* Mobile Styles */
+      @media (max-width: 1572px) {
+        /* Mobile-specific styles */
+        header {
+          background-color: rgba(14, 14, 14, 1);
+          padding: 10px;
+        }
+        /* Add more mobile styles as needed */
+      }
+    
+      /* Tablet and Desktop Styles */
+      @media (min-width: 1200px) {
+        /* Tablet and desktop-specific styles */
+        header {
+          background-color: rgba(14, 14, 14, 1);
+          padding: 20px;
+        }
+        /* Add more tablet and desktop styles as needed */
+      }
+      </style>
+    </head>
+    <body class="overflow-x-hidden">
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <style>
+         /* Default styles for larger screens */
+         .nav-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: rgba(14, 14, 14, 1);
+          padding: 6px 12px;
+        }
+    
+        /* Dropdown styles */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgba(14, 14, 14, 1);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+    
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+    
+        .dropdown-content a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+    
+        .dropdown-content a:hover {
+          background-color: black;
+          color: black;
+        }
+    
+        /* Mobile menu styles */
+        .mobile-menu {
+          display: none;
+          flex-direction: column;
+          background-color: rgba(14, 14, 14, 1);
+          padding: 10px;
+        }
+    
+        .show-mobile-menu {
+          display: flex; /* Show the mobile menu when the class is applied */
+        }
+    
+        /* Close button styles */
+        .close-button {
+          align-self: flex-end;
+          cursor: pointer;
+          color: white;
+          margin-right: 10px;
+        }
+    
+        /* Mobile dropdown styles */
+        
+    
+        /* Default styles for larger screens */
+        .nav-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: rgba(14, 14, 14, 1);
+          padding: 6px 12px;
+        }
+    
+        .donate-button{
+          background: rgba(242, 201, 76, 1);
+          border-radius: 5%;
+        }
+        /* Mobile menu icon styles */
+        .mobile-menu-icon {
+          display: none; /* Initially hide the icon on larger screens */
+          cursor: pointer;
+        }
+    
+        .nav-logo {
+          display: flex;
+          align-items: center;
+        }
+    
+        .nav-menu {
+          display: flex;
+          justify-content: center;
+        }
+    
+        .nav-menu a {
+          margin-right: 15px;
+          color: white;
+          text-decoration: none;
+        }
+    
+        .nav-menu a:hover {
+          color: #F2C94C;
+        }
+    
+        /* Mobile menu styles */
+        .mobile-menu {
+          display: none;
+          flex-direction: row;
+          background-color: rgba(14, 14, 14, 1);
+          padding: 10px;
+        }
+    
+        .show-mobile-menu {
+          display: block; /* Show the menu when the class is applied */
+        }
+    
+        /* Close button styles */
+        .close-button {
+          align-self: flex-end;
+          cursor: pointer;
+          color: white;
+          margin-right: 10px;
+        }
+    
+        @media screen and (max-width: 1200px) {
+          /* Styles for small screens */
+          .nav-container {
+            flex-direction: row;
+            align-items: center;
+          }
+    
+          .mobile-menu-icon {
+            display: block; /* Show the menu icon on small screens */ 
+          }
+          .nav-menu{
+            display: none;
+          }
+    
+          .donate-button {
+            display: none;
+          }
+        }
+        .mobile-dropdown {
+          display: none;
+        }
+    
+        .mobile-dropdown a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+    
+        .mobile-dropdown a:hover {
+          background-color: #F2C94C;
+          color: black;
+        }
+    
+        .show-mobile-menu .mobile-dropdown {
+          display: block;
+        }
+      </style>
+    
+    </head>
+    <body class="overflow-x-hidden">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="">
+            <img src="../static/assets/logo-white.png" class="h-14 w-14" />
+          </div>
+          <h2 class="ml-1 text-white">SivaAkshayamTrust</h2>
+        </div>
+        <button class="mobile-menu-icon" id="mobile-menu-icon">
+          <svg height="30" id="IconChangeColor" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="30" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+        </button>
+        <div class="nav-menu text-sm">
+          <a href="base" class="ml-2">Home</a>
+          <div class="dropdown">
+            <a href="#" class="ml-2">About</a>
+            <div class="dropdown-content">
+              <a href="aboutus1">Maha Akshaya Sivam</a>
+              <a href="aboutus2">Our Motto</a>
+              <a href="aboutus3">Overview</a>
+              <a href="aboutus4">Embracing Humanity</a>
+            </div>
+          </div>
+          <a href="services" class="ml-2">Ourservices</a>
+          <div class="dropdown">
+            <a href="#" class="ml-2">Getinvolved</a>
+            <div class="dropdown-content">
+              <a href="Getinvolved">Join Our Team</a>
+              <a href="volunteer">volunteer opportunities</a>
+              <a href="support">Support the Cause</a>
+              <a href="foster">Fostering Collective Impact</a>
+              <a href="impact">Impact</a>
+            </div>
+          </div>
+          <a href="Causes" class="ml-2">Causes</a> 
+          <a href="faq" class="ml-2">FAQ's</a>
+          <a href="contactus" class="ml-2">ContactUs</a>
+        </div>
+        <div class="donate-button" id="donate-button">
+          <a href="Donate"><button class="h-12 w-40 text-black font-bold hover:text-white">Donate Now</button></a>
+        </div>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <button class="close-button" onclick="closeMobileMenu()">
+          Close
+        </button>
+        <div class="text-md text-white block">
+          <a href="base" class="block ml-1">Home</a>
+          <div class="mobile-dropdown">
+            <a href="#" class="ml-1">About</a>
+            <a href="aboutus1" class="ml-4">Maha Akshaya Sivam</a>
+            <a href="aboutus2" class="ml-4">Out Motto</a>
+            <a href="aboutus3" class="ml-4">Overview</a>
+            <a href="aboutus4" class="ml-4">Embracing Humanity</a>
+          </div>
+          <a href="services" class="ml-1">Our Services</a>
+          <div class="mobile-dropdown">
+            <a href="#">Getinvolved</a>
+            <a href="Getinvolved" class="ml-4">Join Our Team</a>
+            <a href="volunteer" class="ml-4">volunteer opportunities</a>
+            <a href="support" class="ml-4">Support the Cause</a>
+            <a href="foster" class="ml-4">Fostering Collective Impact</a>
+            <a href="impact" class="ml-4">Fostering Collective Impact</a>
+          </div>
+          <a href="Causes" class="ml-1 block">Causes</a> 
+          <a href="faq" class="ml-1 block">FAQ's</a>
+          <a href="contactus" class="ml-1 block">ContactUs</a>
+        </div>
+      </div>
+      
+      <script>
+         // JavaScript to toggle the mobile menu when the icon is clicked
+         const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+         const mobileMenu = document.getElementById('mobile-menu');
+     
+         mobileMenuIcon.addEventListener('click', () => {
+           mobileMenu.classList.toggle('show-mobile-menu');
+         });
+     
+         // JavaScript to close the mobile menu when the close button is clicked
+         function closeMobileMenu() {
+           mobileMenu.classList.remove('show-mobile-menu');
+         }
+      </script>
+</body>
+</html>
